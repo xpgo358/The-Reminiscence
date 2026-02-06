@@ -1,2 +1,2 @@
-scoreboard players set @s recording 0
+scoreboard players set @s recording-status 0
 function tr:update_teams

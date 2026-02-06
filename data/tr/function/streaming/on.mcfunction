@@ -1,2 +1,2 @@
-scoreboard players set @s streaming 1
+scoreboard players set @s streaming-status 1
 function tr:update_teams
