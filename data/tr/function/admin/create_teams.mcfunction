@@ -3,13 +3,13 @@ say [tr] Creating teams...
 # Create all teams for combinations p0..p5, r0..1, s0..1
 
 team add t_p0_r0_s0
-team modify t_p0_r0_s0 suffix {"text":" ⓪ ","color":"grey"}
+team modify t_p0_r0_s0 suffix {"text":" ⓪ ","color":"gray"}
 team add t_p0_r1_s0
-team modify t_p0_r1_s0 suffix {"text":"","extra":[{"text":" ⓪ ","color":"grey"},{"text":"●","color":"red"},{"text":" ","color":"white"}]}
+team modify t_p0_r1_s0 suffix {"text":"","extra":[{"text":" ⓪ ","color":"gray"},{"text":"●","color":"red"},{"text":" ","color":"white"}]}
 team add t_p0_r0_s1
-team modify t_p0_r0_s1 suffix {"text":"","extra":[{"text":" ⓪ ","color":"grey"},{"text":"●","color":"light_purple"},{"text":" ","color":"white"}]}
+team modify t_p0_r0_s1 suffix {"text":"","extra":[{"text":" ⓪ ","color":"gray"},{"text":"●","color":"light_purple"},{"text":" ","color":"white"}]}
 team add t_p0_r1_s1
-team modify t_p0_r1_s1 suffix {"text":"","extra":[{"text":" ⓪ ","color":"grey"},{"text":"●","color":"red"},{"text":"●","color":"light_purple"},{"text":" ","color":"white"}]}
+team modify t_p0_r1_s1 suffix {"text":"","extra":[{"text":" ⓪ ","color":"gray"},{"text":"●","color":"red"},{"text":"●","color":"light_purple"},{"text":" ","color":"white"}]}
 
 team add t_p1_r0_s0
 team modify t_p1_r0_s0 suffix {"text":" ① ","color":"green"}
