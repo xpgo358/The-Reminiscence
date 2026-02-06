@@ -12,5 +12,12 @@ execute as @a[tag=!tr_init] run tag @s add tr_init
 
 
 
-# Update teams every tick so prefixes stay in sync
+## Update teams every tick so prefixes stay in sync
 function tr:update_teams
+
+
+
+## Copiando a ernesto
+execute as @a unless score @s recording matches 1 run scoreboard players set @s recording 0
+execute as @a unless score @s streaming matches 1 run scoreboard players set @s streaming 0
+execute as @a unless score @s prank matches 0..5 run scoreboard players set @s prank 0
