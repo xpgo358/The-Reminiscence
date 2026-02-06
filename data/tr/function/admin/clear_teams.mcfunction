@@ -1,4 +1,7 @@
-team leave @a
+say [tr] Clearing teams...
+
+
+team leave @e
 
 team remove t_p0_r0_s0
 team remove t_p0_r1_s0
@@ -30,4 +33,4 @@ team remove t_p5_r1_s0
 team remove t_p5_r0_s1
 team remove t_p5_r1_s1
 
-say [tr] removed t_p*_r*_s* teams
+say [tr] Teams cleared
