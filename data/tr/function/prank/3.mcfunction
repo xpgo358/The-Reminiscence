@@ -1,2 +1,2 @@
-trigger prank set 3
+scoreboard players set @s prank 3
 function tr:update_teams
