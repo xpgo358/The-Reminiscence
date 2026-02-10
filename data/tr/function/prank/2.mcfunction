@@ -1,2 +1,2 @@
-scoreboard players set @s prank 2
+scoreboard players set @s prank-level 2
 function tr:update_teams
