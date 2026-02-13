@@ -14,5 +14,7 @@ tellraw @a {"text":"[tr] Creating triggers...","color":"yellow"}
 scoreboard objectives add prank trigger
 scoreboard objectives add streaming trigger
 scoreboard objectives add recording trigger
+scoreboard objectives add help trigger
+scoreboard objectives add rules trigger
 
 tellraw @a {"text":"[tr] Triggers created","color":"green"}
