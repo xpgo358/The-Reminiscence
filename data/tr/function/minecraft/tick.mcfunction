@@ -9,3 +9,6 @@ function tr:admin/update_teams
 
 # Triggers
 function tr:control/triggers
+
+# Join message
+execute as @a if score @s leave matches 1 run function tr:control/join_message

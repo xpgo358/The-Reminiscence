@@ -1,0 +1,1 @@
+Bienvenid@, no te olvides de revisar los anuncios y eventos en discord y recuerda que puedes hacer /trigger help para mas ayuda

@@ -5,6 +5,11 @@ scoreboard objectives add prank-level dummy
 scoreboard objectives add recording-status dummy
 scoreboard objectives add streaming-status dummy
 
+
+# Join message prep
+scoreboard objectives add leave minecraft.custom:minecraft.leave_game
+scoreboard players set @a leave 1
+
 tellraw @a {"text":"[tr] Scoreboards created","color":"green"}
 
 
