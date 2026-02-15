@@ -1,7 +1,0 @@
-{
-    "parent": "minecraft:item/generated",
-    "textures": {
-      "layer0": "minecraft:item/food/sweet_berries/sweet_berries0"
-    }
-  }
-  

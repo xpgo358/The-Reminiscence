@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/totem/_parent_totem",
-  "textures": {
-    "layer0": "minecraft:item/totem/zer_bullet"
-  }
-}
