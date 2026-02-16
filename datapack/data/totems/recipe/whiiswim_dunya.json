@@ -11,7 +11,7 @@
     "id": "minecraft:totem_of_undying",
     "components": {
       "minecraft:item_name": "Dünya",
-      "minecraft:item_model": "whiiswim_dunya"
+      "minecraft:item_model": "whiswiim_dunya"
     },
     "count": 1
   }
