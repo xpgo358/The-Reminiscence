@@ -174,7 +174,9 @@ execute as @a if items entity @s weapon.mainhand minecraft:totem_of_undying[item
 # Detectar si el jugador tiene el tótem de Ralsei en la mano secundaria
 execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_model="phavern_ralsei"] run scoreboard players set @s used_ralsei 3
 # Reducir el contador del tótem cada tick
-execute as @a if score @s used_ralsei matches 1.. run scoreboard players remove @s used_ralsei 1# Mostrar mensaje cuando se usa el tótem de Ralseiexecute as @a[scores={used_totem=1,used_ralsei=1..}] run tellraw @a [{"text":"¡Ralsei le ha hecho un pastel a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" y le ha dado una segunda vida!",color:"yellow"}]
+execute as @a if score @s used_ralsei matches 1.. run scoreboard players remove @s used_ralsei 1
+# Mostrar mensaje cuando se usa el tótem de Ralsei
+execute as @a[scores={used_totem=1,used_ralsei=1..}] run tellraw @a [{"text":"¡Ralsei le ha hecho un pastel a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" y le ha dado una segunda vida!",color:"yellow"}]
 
 # ===== RICH =====
 # Detectar si el jugador tiene el tótem de Rich en la mano principal
