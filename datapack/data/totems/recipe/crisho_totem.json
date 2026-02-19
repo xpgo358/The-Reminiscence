@@ -5,6 +5,12 @@
   "ingredients": [
     [
       "minecraft:totem_of_undying"
+    ],
+    [
+      "minecraft:dandelion"
+    ],
+    [
+      "minecraft:gold_ingot"
     ]
   ],
   "result": {

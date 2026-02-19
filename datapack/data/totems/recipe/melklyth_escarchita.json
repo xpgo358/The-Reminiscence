@@ -5,6 +5,9 @@
   "ingredients": [
     [
       "minecraft:totem_of_undying"
+    ],
+    [
+      "minecraft:carrot"
     ]
   ],
   "result": {
