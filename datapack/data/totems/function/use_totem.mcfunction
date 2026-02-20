@@ -6,7 +6,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_jann matches 1.. run scoreboard players remove @s used_jann 1
 # Mostrar mensaje cuando se usa el tótem de Jann
-execute as @a[scores={used_totem=1,used_jann=1..}] run tellraw @a [{"text":"¡Jann ha intimidado la muerte salvando a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" aunque también le ha intimidado!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_jann=1..}] run tellraw @a [{"text":"¡Jann y ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" se han ido a mimir!",color:"yellow"}]
 
 # ===== ADIAC MANCHAS =====
 # Detectar si el jugador tiene el tótem de Manchas en la mano principal
@@ -96,7 +96,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_fail matches 1.. run scoreboard players remove @s used_fail 1
 # Mostrar mensaje cuando se usa el tótem de Fail
-execute as @a[scores={used_totem=1,used_fail=1..}] run tellraw @a [{"text":"¡Ese fallo tan critico ha hecho fallar al juego, reviviendo a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" en el último segundo!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_fail=1..}] run tellraw @a [{"text":"¡",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" rolled a Critical Fail!",color:"yellow"}]
 
 # ===== JOLYNE LASER =====
 # Detectar si el jugador tiene el tótem de Laser en la mano principal
