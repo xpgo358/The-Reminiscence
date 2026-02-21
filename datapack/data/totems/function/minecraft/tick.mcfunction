@@ -1,1 +1,2 @@
 function totems:use_totem
+function totems:give_recipes
