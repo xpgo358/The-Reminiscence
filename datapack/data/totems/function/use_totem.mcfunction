@@ -13,7 +13,7 @@ execute as @a[scores={used_totem=1,used_jann=1..}] run tellraw @a [{"text":"¡Ja
 execute as @a if items entity @s weapon.mainhand minecraft:totem_of_undying[item_model="adiac_manchas"] run scoreboard players set @s used_manchas 3
 # Detectar si el jugador tiene el tótem de Manchas en la mano secundaria
 execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_model="adiac_manchas"] run scoreboard players set @s used_manchas 3
-# Reducir el contador del tótem cada tick
+# Reducir el contador del tótem cada tick   
 execute as @a if score @s used_manchas matches 1.. run scoreboard players remove @s used_manchas 1
 # Mostrar mensaje cuando se usa el tótem de Manchas
 execute as @a[scores={used_totem=1,used_manchas=1..}] run tellraw @a [{"text":"¡Manchas ha salvado a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" para que siga malcriándolo!",color:"yellow"}]
@@ -76,7 +76,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_fiona matches 1.. run scoreboard players remove @s used_fiona 1
 # Mostrar mensaje cuando se usa el tótem de Fiona
-execute as @a[scores={used_totem=1,used_fiona=1..}] run tellraw @a [{"text":"¡Fiona ha aplastado la muerte salvando a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_fiona=1..}] run tellraw @a [{"text":"¡Fiona le metió tal cabezazo a la muerte que se dio la vuelta y se fue, salvando a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow"}]
 
 # ===== ESTELA STAR =====
 # Detectar si el jugador tiene el tótem de Star en la mano principal

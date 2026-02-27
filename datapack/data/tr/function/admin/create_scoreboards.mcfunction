@@ -4,7 +4,7 @@
 scoreboard objectives add prank-level dummy
 scoreboard objectives add recording-status dummy
 scoreboard objectives add streaming-status dummy
-
+scoreboard objectives add afk-status dummy
 
 # Join message prep
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
@@ -26,5 +26,5 @@ scoreboard objectives add streaming trigger
 scoreboard objectives add recording trigger
 scoreboard objectives add help trigger
 scoreboard objectives add rules trigger
-
+scoreboard objectives add afk trigger
 #tellraw @a {"text":"[tr] Triggers creados","color":"green"}

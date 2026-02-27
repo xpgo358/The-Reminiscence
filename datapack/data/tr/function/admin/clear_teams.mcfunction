@@ -2,6 +2,9 @@
 
 # Remove all teams related to the prank system, recording and streaming
 
+# AFK
+team remove AFK
+
 # Prank 0
 team remove t_p0_r0_s0
 team remove t_p0_r1_s0
