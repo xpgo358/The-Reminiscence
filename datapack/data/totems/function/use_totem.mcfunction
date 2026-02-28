@@ -136,7 +136,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_burbuja matches 1.. run scoreboard players remove @s used_burbuja 1
 # Mostrar mensaje cuando se usa el tótem de Burbuja
-execute as @a[scores={used_totem=1,used_burbuja=1..}] run tellraw @a [{"text":"El alma de Burbuja viene a rescatar a ","color":"yellow"},{"selector":"@s","color":"gold","bold":true},{"text":". ¡No pierdas esta oportunidad!","color":"yellow"}]
+execute as @a[scores={used_totem=1,used_burbuja=1..}] run tellraw @a [{"text":"El alma de Burbuja viene a rescatar a ","color":"yellow"},{"selector":"@s","color":"gold","bold":true},{"text":" de la muerte. ¡No pierdas esta oportunidad!","color":"yellow"}]
 
 # ===== LU LALA =====
 # Detectar si el jugador tiene el tótem de Lala en la mano principal
