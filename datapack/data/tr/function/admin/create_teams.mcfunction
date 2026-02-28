@@ -4,66 +4,66 @@
 # AFK
 team add AFK
 team modify AFK color gray
-team modify AFK suffix {"text":" ⌀","color":"gray", bold:true}
+team modify AFK suffix {text:" ⌀",color:"gray",bold:true,hover_event:{action:show_text,value:{text:"",extra:[{text:"AFK:",color:"gray",bold:true},{text:"\n¡Estoy AFK! Si necesitas algo, hablame por privado o deja un mensaje después del sonido.",color:"white"}]}}}
 
 # Prank 0
 team add t_p0_r0_s0
-team modify t_p0_r0_s0 suffix {"text":" ⓪","color":"gray",bold:false}
+team modify t_p0_r0_s0 suffix {text:" ⓪",color:"gray",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 0:",color:"gray"},{text:"\nNo acepto pranks ni regalos.",color:"white"}]}}}
 team add t_p0_r1_s0
-team modify t_p0_r1_s0 suffix {"text":"","extra":[{"text":" ⓪ ","color":"gray", bold:false},{"text":"●","color":"dark_red",bold:false}]}
+team modify t_p0_r1_s0 suffix {text:"",extra:[{text:" ⓪ ",color:"gray",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 0:",color:"gray"},{text:"\nNo acepto pranks ni regalos.",color:"white"}]}}},{text:"●",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}}]}
 team add t_p0_r0_s1
-team modify t_p0_r0_s1 suffix {"text":"","extra":[{"text":" ⓪ ","color":"gray",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p0_r0_s1 suffix {text:"",extra:[{text:" ⓪ ",color:"gray",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 0:",color:"gray"},{text:"\nNo acepto pranks ni regalos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 team add t_p0_r1_s1
-team modify t_p0_r1_s1 suffix {"text":"","extra":[{"text":" ⓪ ","color":"gray",bold:false},{"text":"● ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p0_r1_s1 suffix {text:"",extra:[{text:" ⓪ ",color:"gray",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 0:",color:"gray"},{text:"\nNo acepto pranks ni regalos.",color:"white"}]}}},{text:"● ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 
 # Prank 1
 team add t_p1_r0_s0
-team modify t_p1_r0_s0 suffix {"text":" ①","color":"green",bold:false}
+team modify t_p1_r0_s0 suffix {text:" ①",color:"green",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 1:",color:"green"},{text:"\nMe puedes hacer pranks leves pero sin daño. Pueden ser molestas pero no destructivas y deben ser fáciles de quitar. También acepto regalos pequeños.",color:"white"}]}}}
 team add t_p1_r1_s0
-team modify t_p1_r1_s0 suffix {"text":"","extra":[{"text":" ① ","color":"green",bold:false},{"text":"●","color":"dark_red",bold:false}]}
+team modify t_p1_r1_s0 suffix {text:"",extra:[{text:" ① ",color:"green",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 1:",color:"green"},{text:"\nMe puedes hacer pranks leves pero sin daño. Pueden ser molestas pero no destructivas y deben ser fáciles de quitar. También acepto regalos pequeños.",color:"white"}]}}},{text:"●",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}}]}
 team add t_p1_r0_s1
-team modify t_p1_r0_s1 suffix {"text":"","extra":[{"text":" ① ","color":"green",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p1_r0_s1 suffix {text:"",extra:[{text:" ① ",color:"green",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 1:",color:"green"},{text:"\nMe puedes hacer pranks leves pero sin daño. Pueden ser molestas pero no destructivas y deben ser fáciles de quitar. También acepto regalos pequeños.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 team add t_p1_r1_s1
-team modify t_p1_r1_s1 suffix {"text":"","extra":[{"text":" ① ","color":"green",bold:false},{"text":"● ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p1_r1_s1 suffix {text:"",extra:[{text:" ① ",color:"green",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 1:",color:"green"},{text:"\nMe puedes hacer pranks leves pero sin daño. Pueden ser molestas pero no destructivas y deben ser fáciles de quitar. También acepto regalos pequeños.",color:"white"}]}}},{text:"● ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 
 # Prank 2
 team add t_p2_r0_s0
-team modify t_p2_r0_s0 suffix {"text":" ②","color":"yellow",bold:false}
+team modify t_p2_r0_s0 suffix {text:" ②",color:"yellow",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 2:",color:"yellow"},{text:"\nQuiero recibir pranks y regalos más elaborados. Las pranks pueden tener daño material pequeño y permito cierto nivel de destrucción o modificación de mis construcciones.",color:"white"}]}}}
 team add t_p2_r1_s0
-team modify t_p2_r1_s0 suffix {"text":"","extra":[{"text":" ② ","color":"yellow",bold:false},{"text":"●","color":"dark_red",bold:false}]}
+team modify t_p2_r1_s0 suffix {text:"",extra:[{text:" ② ",color:"yellow",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 2:",color:"yellow"},{text:"\nQuiero recibir pranks y regalos más elaborados. Las pranks pueden tener daño material pequeño y permito cierto nivel de destrucción o modificación de mis construcciones.",color:"white"}]}}},{text:"●",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}}]}
 team add t_p2_r0_s1
-team modify t_p2_r0_s1 suffix {"text":"","extra":[{"text":" ② ","color":"yellow",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p2_r0_s1 suffix {text:"",extra:[{text:" ② ",color:"yellow",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 2:",color:"yellow"},{text:"\nQuiero recibir pranks y regalos más elaborados. Las pranks pueden tener daño material pequeño y permito cierto nivel de destrucción o modificación de mis construcciones.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 team add t_p2_r1_s1
-team modify t_p2_r1_s1 suffix {"text":"","extra":[{"text":" ② ","color":"yellow",bold:false},{"text":"● ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p2_r1_s1 suffix {text:"",extra:[{text:" ② ",color:"yellow",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 2:",color:"yellow"},{text:"\nQuiero recibir pranks y regalos más elaborados. Las pranks pueden tener daño material pequeño y permito cierto nivel de destrucción o modificación de mis construcciones.",color:"white"}]}}},{text:"● ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 
 # Prank 3
 team add t_p3_r0_s0
-team modify t_p3_r0_s0 suffix {"text":" ③","color":"gold",bold:false}
+team modify t_p3_r0_s0 suffix {text:" ③",color:"gold",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 3:",color:"gold"},{text:"\nQuiero recibir pranks grandes y regalos sorprendentes. Las pranks no pueden ser demasiado molestas ni destructivas.",color:"white"}]}}}
 team add t_p3_r1_s0
-team modify t_p3_r1_s0 suffix {"text":"","extra":[{"text":" ③ ","color":"gold",bold:false},{"text":"●","color":"dark_red",bold:false}]}
+team modify t_p3_r1_s0 suffix {text:"",extra:[{text:" ③ ",color:"gold",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 3:",color:"gold"},{text:"\nQuiero recibir pranks grandes y regalos sorprendentes. Las pranks no pueden ser demasiado molestas ni destructivas.",color:"white"}]}}},{text:"●",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}}]}
 team add t_p3_r0_s1
-team modify t_p3_r0_s1 suffix {"text":"","extra":[{"text":" ③ ","color":"gold",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p3_r0_s1 suffix {text:"",extra:[{text:" ③ ",color:"gold",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 3:",color:"gold"},{text:"\nQuiero recibir pranks grandes y regalos sorprendentes. Las pranks no pueden ser demasiado molestas ni destructivas.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 team add t_p3_r1_s1
-team modify t_p3_r1_s1 suffix {"text":"","extra":[{"text":" ③ ","color":"gold",bold:false},{"text":"● ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p3_r1_s1 suffix {text:"",extra:[{text:" ③ ",color:"gold",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 3:",color:"gold"},{text:"\nQuiero recibir pranks grandes y regalos sorprendentes. Las pranks no pueden ser demasiado molestas ni destructivas.",color:"white"}]}}},{text:"● ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 
 # Prank 4
 team add t_p4_r0_s0
-team modify t_p4_r0_s0 suffix {"text":" ④","color":"red",bold:false}
+team modify t_p4_r0_s0 suffix {text:" ④",color:"red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 4:",color:"red"},{text:"\nLas pranks que reciba pueden ser mortales y molestas siempre que no haya pérdidas materiales graves. No quiero pranks pesadas o de mal gusto. También acepto regalos gigantes.",color:"white"}]}}}
 team add t_p4_r1_s0
-team modify t_p4_r1_s0 suffix {"text":"","extra":[{"text":" ④ ","color":"red",bold:false},{"text":"●","color":"dark_red",bold:false}]}
+team modify t_p4_r1_s0 suffix {text:"",extra:[{text:" ④ ",color:"red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 4:",color:"red"},{text:"\nLas pranks que reciba pueden ser mortales y molestas siempre que no haya pérdidas materiales graves. No quiero pranks pesadas o de mal gusto. También acepto regalos gigantes.",color:"white"}]}}},{text:"●",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}}]}
 team add t_p4_r0_s1
-team modify t_p4_r0_s1 suffix {"text":"","extra":[{"text":" ④ ","color":"red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p4_r0_s1 suffix {text:"",extra:[{text:" ④ ",color:"red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 4:",color:"red"},{text:"\nLas pranks que reciba pueden ser mortales y molestas siempre que no haya pérdidas materiales graves. No quiero pranks pesadas o de mal gusto. También acepto regalos gigantes.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 team add t_p4_r1_s1
-team modify t_p4_r1_s1 suffix {"text":"","extra":[{"text":" ④ ","color":"red",bold:false},{"text":"● ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p4_r1_s1 suffix {text:"",extra:[{text:" ④ ",color:"red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 4:",color:"red"},{text:"\nLas pranks que reciba pueden ser mortales y molestas siempre que no haya pérdidas materiales graves. No quiero pranks pesadas o de mal gusto. También acepto regalos gigantes.",color:"white"}]}}},{text:"● ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 
 # Prank 5
 team add t_p5_r0_s0
-team modify t_p5_r0_s0 suffix {"text":" ⑤","color":"dark_red",bold:false}
+team modify t_p5_r0_s0 suffix {text:" ⑤",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 5:",color:"dark_red"},{text:"\nPuedes hacerme pranks de cualquier tipo. Sin responsabilidad por arreglar daños materiales o emocionales. A cambio, me puedes hacer regalos descomunales y con un valor inigualable.",color:"white"}]}}}
 team add t_p5_r1_s0
-team modify t_p5_r1_s0 suffix {"text":"","extra":[{"text":" ⑤ ","color":"dark_red",bold:false},{"text":"●","color":"dark_red",bold:false}]}
+team modify t_p5_r1_s0 suffix {text:"",extra:[{text:" ⑤ ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 5:",color:"dark_red"},{text:"\nPuedes hacerme pranks de cualquier tipo. Sin responsabilidad por arreglar daños materiales o emocionales. A cambio, me puedes hacer regalos descomunales y con un valor inigualable.",color:"white"}]}}},{text:"●",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}}]}
 team add t_p5_r0_s1
-team modify t_p5_r0_s1 suffix {"text":"","extra":[{"text":" ⑤ ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p5_r0_s1 suffix {text:"",extra:[{text:" ⑤ ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 5:",color:"dark_red"},{text:"\nPuedes hacerme pranks de cualquier tipo. Sin responsabilidad por arreglar daños materiales o emocionales. A cambio, me puedes hacer regalos descomunales y con un valor inigualable.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 team add t_p5_r1_s1
-team modify t_p5_r1_s1 suffix {"text":"","extra":[{"text":" ⑤ ","color":"dark_red",bold:false},{"text":"● ","color":"dark_red",bold:false},{"text":"●","color":"dark_purple",bold:false}]}
+team modify t_p5_r1_s1 suffix {text:"",extra:[{text:" ⑤ ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"NIVEL 5:",color:"dark_red"},{text:"\nPuedes hacerme pranks de cualquier tipo. Sin responsabilidad por arreglar daños materiales o emocionales. A cambio, me puedes hacer regalos descomunales y con un valor inigualable.",color:"white"}]}}},{text:"● ",color:"dark_red",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"RECORDING",color:"dark_red"},{text:"\n¡Estoy grabando! Saluda a los espectadores, pero avísame si no quieres salir en mis vídeos.",color:"white"}]}}},{text:"●",color:"dark_purple",bold:false,hover_event:{action:show_text,value:{text:"",extra:[{text:"STREAMING",color:"dark_purple"},{text:"\n¡Estoy en directo! Pásate a saludar si quieres, pero ten cuidado si no quieres salir en pantalla.",color:"white"}]}}}]}
 
 #tellraw @a {"text":"[tr] Teams creados","color":"green"}
