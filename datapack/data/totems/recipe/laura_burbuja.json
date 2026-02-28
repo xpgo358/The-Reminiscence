@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "totems",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:totem_of_undying"
+    ],
+    [
+      "minecraft:redstone"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:totem_of_undying",
+    "components": {
+      "minecraft:item_name": "Burbuja",
+      "minecraft:item_model": "laura_burbuja"
+    },
+    "count": 1
+  }
+}

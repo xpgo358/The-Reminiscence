@@ -14,6 +14,8 @@ scoreboard objectives remove used_star
 scoreboard objectives remove used_fail
 scoreboard objectives remove used_laser
 scoreboard objectives remove used_thor
+scoreboard objectives remove used_knight
+scoreboard objectives remove used_burbuja
 scoreboard objectives remove used_lala
 scoreboard objectives remove used_yuki
 scoreboard objectives remove used_escarchita

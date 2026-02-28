@@ -118,6 +118,26 @@ execute as @a if score @s used_thor matches 1.. run scoreboard players remove @s
 # Mostrar mensaje cuando se usa el tótem de Thor
 execute as @a[scores={used_totem=1,used_thor=1..}] run tellraw @a [{"text":"¡Thor le ha metido un martillazo en la cabeza a la muerte y ha salvado a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" de volverse un poco Loki!",color:"yellow"}]
 
+# ===== KRIS KNIGHT =====
+# Detectar si el jugador tiene el tótem de Knight en la mano principal
+execute as @a if items entity @s weapon.mainhand minecraft:totem_of_undying[item_model="kris_knight"] run scoreboard players set @s used_knight 3
+# Detectar si el jugador tiene el tótem de Knight en la mano secundaria
+execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_model="kris_knight"] run scoreboard players set @s used_knight 3
+# Reducir el contador del tótem cada tick
+execute as @a if score @s used_knight matches 1.. run scoreboard players remove @s used_knight 1
+# Mostrar mensaje cuando se usa el tótem de Knight
+execute as @a[scores={used_totem=1,used_knight=1..}] run tellraw @a [{"selector":"@s",color:"gold",bold:true},{"text":" estuvo a punto de ser consumido por el vacío pero el caballerito llegó a salvarlo","color":"yellow"}]
+
+# ===== LAURA BURBUJA =====
+# Detectar si el jugador tiene el tótem de Burbuja en la mano principal
+execute as @a if items entity @s weapon.mainhand minecraft:totem_of_undying[item_model="laura_burbuja"] run scoreboard players set @s used_burbuja 3
+# Detectar si el jugador tiene el tótem de Burbuja en la mano secundaria
+execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_model="laura_burbuja"] run scoreboard players set @s used_burbuja 3
+# Reducir el contador del tótem cada tick
+execute as @a if score @s used_burbuja matches 1.. run scoreboard players remove @s used_burbuja 1
+# Mostrar mensaje cuando se usa el tótem de Burbuja
+execute as @a[scores={used_totem=1,used_burbuja=1..}] run tellraw @a [{"text":"El alma de Burbuja viene a rescatar a ","color":"yellow"},{"selector":"@s","color":"gold","bold":true},{"text":". ¡No pierdas esta oportunidad!","color":"yellow"}]
+
 # ===== LU LALA =====
 # Detectar si el jugador tiene el tótem de Lala en la mano principal
 execute as @a if items entity @s weapon.mainhand minecraft:totem_of_undying[item_model="lu_lala"] run scoreboard players set @s used_lala 3

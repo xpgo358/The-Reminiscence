@@ -10,6 +10,8 @@ recipe give @a totems:estela_star
 recipe give @a totems:isma_fail
 recipe give @a totems:jolyne_laser
 recipe give @a totems:karen_thor
+recipe give @a totems:kris_knight
+recipe give @a totems:laura_burbuja
 recipe give @a totems:lu_lala
 recipe give @a totems:mati_yuki
 recipe give @a totems:melklyth_escarchita
@@ -22,7 +24,7 @@ recipe give @a totems:sophia_luna
 recipe give @a totems:umiempi_patitas
 recipe give @a totems:vaynilo_felipe
 recipe give @a totems:vorti_hds
-recipe give @a totems:whiiswim_dunya
+recipe give @a totems:whiswiim_dunya
 recipe give @a totems:willy_lancer
 recipe give @a totems:xp_baku
 recipe give @a totems:zer_bullet

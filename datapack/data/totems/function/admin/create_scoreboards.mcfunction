@@ -14,6 +14,8 @@ scoreboard objectives add used_star dummy
 scoreboard objectives add used_fail dummy
 scoreboard objectives add used_laser dummy
 scoreboard objectives add used_thor dummy
+scoreboard objectives add used_knight dummy
+scoreboard objectives add used_burbuja dummy
 scoreboard objectives add used_lala dummy
 scoreboard objectives add used_yuki dummy
 scoreboard objectives add used_escarchita dummy
