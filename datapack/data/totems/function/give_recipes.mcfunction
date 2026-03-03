@@ -28,4 +28,3 @@ recipe give @a totems:whiswiim_dunya
 recipe give @a totems:willy_lancer
 recipe give @a totems:xp_baku
 recipe give @a totems:zer_bullet
-recipe take @a totems:ballon_fish
