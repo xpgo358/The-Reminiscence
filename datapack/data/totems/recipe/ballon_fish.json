@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "totems",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:totem_of_undying"
+    ],
+    [
+      "minecraft:pufferfish"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:totem_of_undying",
+    "components": {
+      "minecraft:item_name": "Ballon Fish",
+      "minecraft:item_model": "pufferfish"
+    },
+    "count": 1
+  }
+}
