@@ -6,7 +6,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_jann matches 1.. run scoreboard players remove @s used_jann 1
 # Mostrar mensaje cuando se usa el tótem de Jann
-execute as @a[scores={used_totem=1,used_jann=1..}] run tellraw @a [{"text":"¡Jann y ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" han soñado con un día más juntos!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_jann=1..}] run tellraw @a [{"text":"¡Jann y ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" han soñado con un día más juntos!",color:"yellow",bold:false}]
 
 # ===== ADIAC MANCHAS =====
 # Detectar si el jugador tiene el tótem de Manchas en la mano principal
@@ -16,7 +16,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick   
 execute as @a if score @s used_manchas matches 1.. run scoreboard players remove @s used_manchas 1
 # Mostrar mensaje cuando se usa el tótem de Manchas
-execute as @a[scores={used_totem=1,used_manchas=1..}] run tellraw @a [{"text":"¡Manchas ha salvado a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" para que siga malcriándolo!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_manchas=1..}] run tellraw @a [{"text":"¡Manchas ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" para que siga malcriándolo!",color:"yellow",bold:false}]
 
 # ===== BELBIO KIKI =====
 # Detectar si el jugador tiene el tótem de Kiki en la mano principal
@@ -26,7 +26,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_kiki matches 1.. run scoreboard players remove @s used_kiki 1
 # Mostrar mensaje cuando se usa el tótem de Kiki
-execute as @a[scores={used_totem=1,used_kiki=1..}] run tellraw @a [{"text":"¡Kiki ha empalado la muerte y a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" le gustaría darle un abrazo, pero pincha mucho!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_kiki=1..}] run tellraw @a [{"text":"¡Kiki ha empalado la muerte y a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" le gustaría darle un abrazo, pero pincha mucho!",color:"yellow",bold:false}]
 
 # ===== BOOM TNT =====
 # Detectar si el jugador tiene el tótem de TNT en la mano principal
@@ -46,7 +46,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_mixu matches 1.. run scoreboard players remove @s used_mixu 1
 # Mostrar mensaje cuando se usa el tótem de Mixu
-execute as @a[scores={used_totem=1,used_mixu=1..}] run tellraw @a [{"text":"¡Mixu ha decidido que ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" le importa y le ha salvado la vida!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_mixu=1..}] run tellraw @a [{"text":"¡Mixu ha decidido que ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" le importa y le ha salvado la vida!",color:"yellow",bold:false}]
 
 # ===== CRISHO OLD TOTEM =====
 # Detectar si el jugador tiene el tótem antiguo en la mano principal
@@ -56,7 +56,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_oldtotem matches 1.. run scoreboard players remove @s used_oldtotem 1
 # Mostrar mensaje cuando se usa el tótem antiguo
-execute as @a[scores={used_totem=1,used_oldtotem=1..}] run tellraw @a [{"text":"¡Tanta nostalgia le ha dado una segunda vida a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" !",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_oldtotem=1..}] run tellraw @a [{"text":"¡Tanta nostalgia le ha dado una segunda vida a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" !",color:"yellow",bold:false}]
 
 # ===== DALOX AZALEA =====
 # Detectar si el jugador tiene el tótem de Azalea en la mano principal
@@ -66,7 +66,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_azalea matches 1.. run scoreboard players remove @s used_azalea 1
 # Mostrar mensaje cuando se usa el tótem de Azalea
-execute as @a[scores={used_totem=1,used_azalea=1..}] run tellraw @a [{"text":"¡","color":"yellow"},{"selector":"@s","color":"gold","bold":true},{text:" ha entregado la azalea para salvarse!","color":"yellow"}]
+execute as @a[scores={used_totem=1,used_azalea=1..}] run tellraw @a [{"text":"¡","color":"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{text:" ha entregado la azalea para salvarse!","color":"yellow",bold:false}]
 
 # ===== ERNESTO FIONA =====
 # Detectar si el jugador tiene el tótem de Fiona en la mano principal
@@ -76,7 +76,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_fiona matches 1.. run scoreboard players remove @s used_fiona 1
 # Mostrar mensaje cuando se usa el tótem de Fiona
-execute as @a[scores={used_totem=1,used_fiona=1..}] run tellraw @a [{"text":"¡Fiona le metió tal cabezazo a la muerte que se dio la vuelta y se fue, salvando a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_fiona=1..}] run tellraw @a [{"text":"¡Fiona le metió tal cabezazo a la muerte que se dio la vuelta y se fue, salvando a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow",bold:false}]
 
 # ===== ESTELA STAR =====
 # Detectar si el jugador tiene el tótem de Star en la mano principal
@@ -86,7 +86,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_star matches 1.. run scoreboard players remove @s used_star 1
 # Mostrar mensaje cuando se usa el tótem de Star
-execute as @a[scores={used_totem=1,used_star=1..}] run tellraw @a [{"text":"¡El deseo de ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" se ha cumplido, dándole una segunda oportunidad!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_star=1..}] run tellraw @a [{"text":"¡El deseo de ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" se ha cumplido, dándole una segunda oportunidad!",color:"yellow",bold:false}]
 
 # ===== ISMA FAIL =====
 # Detectar si el jugador tiene el tótem de Fail en la mano principal
@@ -96,7 +96,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_fail matches 1.. run scoreboard players remove @s used_fail 1
 # Mostrar mensaje cuando se usa el tótem de Fail
-execute as @a[scores={used_totem=1,used_fail=1..}] run tellraw @a [{"text":"¡",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" rolled a Critical Fail!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_fail=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" rolled a Critical Fail!",color:"yellow",bold:false}]
 
 # ===== JOLYNE LASER =====
 # Detectar si el jugador tiene el tótem de Laser en la mano principal
@@ -106,7 +106,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_laser matches 1.. run scoreboard players remove @s used_laser 1
 # Mostrar mensaje cuando se usa el tótem de Laser
-execute as @a[scores={used_totem=1,used_laser=1..}] run tellraw @a [{"text":"¡Láser se ha comido a la muerte, salvando a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_laser=1..}] run tellraw @a [{"text":"¡Láser se ha comido a la muerte, salvando a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow",bold:false}]
 
 # ===== KAREN THOR =====
 # Detectar si el jugador tiene el tótem de Thor en la mano principal
@@ -116,7 +116,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_thor matches 1.. run scoreboard players remove @s used_thor 1
 # Mostrar mensaje cuando se usa el tótem de Thor
-execute as @a[scores={used_totem=1,used_thor=1..}] run tellraw @a [{"text":"¡Thor le ha metido un martillazo en la cabeza a la muerte y ha salvado a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" de volverse un poco Loki!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_thor=1..}] run tellraw @a [{"text":"¡Thor le ha metido un martillazo en la cabeza a la muerte y ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" de volverse un poco Loki!",color:"yellow",bold:false}]
 
 # ===== KRIS KNIGHT =====
 # Detectar si el jugador tiene el tótem de Knight en la mano principal
@@ -126,7 +126,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_knight matches 1.. run scoreboard players remove @s used_knight 1
 # Mostrar mensaje cuando se usa el tótem de Knight
-execute as @a[scores={used_totem=1,used_knight=1..}] run tellraw @a [{"selector":"@s",color:"gold",bold:true},{"text":" estuvo a punto de ser consumido por el vacío pero el caballerito llegó a salvarlo","color":"yellow"}]
+execute as @a[scores={used_totem=1,used_knight=1..}] run tellraw @a [{"selector":"@s",color:"gold",bold:true},{"text":" estuvo a punto de ser consumido por el vacío pero el caballerito llegó a salvarlo","color":"yellow",bold:false}]
 
 # ===== LAURA BURBUJA =====
 # Detectar si el jugador tiene el tótem de Burbuja en la mano principal
@@ -136,7 +136,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_burbuja matches 1.. run scoreboard players remove @s used_burbuja 1
 # Mostrar mensaje cuando se usa el tótem de Burbuja
-execute as @a[scores={used_totem=1,used_burbuja=1..}] run tellraw @a [{"text":"El alma de Burbuja viene a rescatar a ","color":"yellow"},{"selector":"@s","color":"gold","bold":true},{"text":" de la muerte. ¡No pierdas esta oportunidad!","color":"yellow"}]
+execute as @a[scores={used_totem=1,used_burbuja=1..}] run tellraw @a [{"text":"El alma de Burbuja viene a rescatar a ","color":"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" de la muerte. ¡No pierdas esta oportunidad!","color":"yellow",bold:false}]
 
 # ===== LU LALA =====
 # Detectar si el jugador tiene el tótem de Lala en la mano principal
@@ -146,7 +146,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_lala matches 1.. run scoreboard players remove @s used_lala 1
 # Mostrar mensaje cuando se usa el tótem de Lala
-execute as @a[scores={used_totem=1,used_lala=1..}] run tellraw @a [{"text":"¡Lala ha repartido amor y ha devuelto a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" al combate!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_lala=1..}] run tellraw @a [{"text":"¡Lala ha repartido amor y ha devuelto a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" al combate!",color:"yellow",bold:false}]
 
 # ===== MATI YUKI =====
 # Detectar si el jugador tiene el tótem de Yuki en la mano principal
@@ -156,7 +156,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_yuki matches 1.. run scoreboard players remove @s used_yuki 1
 # Mostrar mensaje cuando se usa el tótem de Yuki
-execute as @a[scores={used_totem=1,used_yuki=1..}] run tellraw @a [{"text":"¡Yuki ha ronroneado, provocando tanta ternura a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" que le ha curado!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_yuki=1..}] run tellraw @a [{"text":"¡Yuki ha ronroneado, provocando tanta ternura a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" que le ha curado!",color:"yellow",bold:false}]
 
 # ===== MELKLYTH ESCARCHITA =====
 # Detectar si el jugador tiene el tótem de Escarchita en la mano principal
@@ -166,7 +166,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_escarchita matches 1.. run scoreboard players remove @s used_escarchita 1
 # Mostrar mensaje cuando se usa el tótem de Escarchita
-execute as @a[scores={used_totem=1,used_escarchita=1..}] run tellraw @a [{"text":"¡Escarchita ha helado a la muerte con su pelaje convirtiendo en un polo a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" en el proceso!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_escarchita=1..}] run tellraw @a [{"text":"¡Escarchita ha helado a la muerte con su pelaje convirtiendo en un polo a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" en el proceso!",color:"yellow",bold:false}]
 
 # ===== NEBLUNO NERI =====
 # Detectar si el jugador tiene el tótem de Neri en la mano principal
@@ -176,7 +176,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_neri matches 1.. run scoreboard players remove @s used_neri 1
 # Mostrar mensaje cuando se usa el tótem de Neri
-execute as @a[scores={used_totem=1,used_neri=1..}] run tellraw @a [{"text":"¡Neri ha salido volando junto a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" escabulléndose de la muerte!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_neri=1..}] run tellraw @a [{"text":"¡Neri ha salido volando junto a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" escabulléndose de la muerte!",color:"yellow",bold:false}]
 
 # ===== PAMME RICH =====
 # Detectar si el jugador tiene el tótem de Rich en la mano principal
@@ -186,7 +186,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_rich matches 1.. run scoreboard players remove @s used_rich 1
 # Mostrar mensaje cuando se usa el tótem de Rich
-execute as @a[scores={used_totem=1,used_rich=1..}] run tellraw @a [{"text":"¡Rich le ha donado la poca cordura que le queda a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" evitando su demencia!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_rich=1..}] run tellraw @a [{"text":"¡Rich le ha donado la poca cordura que le queda a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" evitando su demencia!",color:"yellow",bold:false}]
 
 # ===== PHAVERN RALSEI =====
 # Detectar si el jugador tiene el tótem de Ralsei en la mano principal
@@ -206,7 +206,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_danny matches 1.. run scoreboard players remove @s used_danny 1
 # Mostrar mensaje cuando se usa el tótem de Danny
-execute as @a[scores={used_totem=1,used_danny=1..}] run tellraw @a [{"text":"¡No es Garfield, es Danny, que ha salvado a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" comiéndose la muerte de un bocado!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_danny=1..}] run tellraw @a [{"text":"¡No es Garfield, es Danny, que ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" comiéndose la muerte de un bocado!",color:"yellow",bold:false}]
 
 # ===== SAMA MIKA =====
 # Detectar si el jugador tiene el tótem de Mika en la mano principal
@@ -216,7 +216,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_mika matches 1.. run scoreboard players remove @s used_mika 1
 # Mostrar mensaje cuando se usa el tótem de Mika
-execute as @a[scores={used_totem=1,used_mika=1..}] run tellraw @a [{"text":"¡Mika y ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" se han ido de paseo!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_mika=1..}] run tellraw @a [{"text":"¡Mika y ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" se han ido de paseo!",color:"yellow",bold:false}]
 
 # ===== SOPHIA LUNA =====
 # Detectar si el jugador tiene el tótem de Luna en la mano principal
@@ -226,7 +226,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_luna matches 1.. run scoreboard players remove @s used_luna 1
 # Mostrar mensaje cuando se usa el tótem de Luna
-execute as @a[scores={used_totem=1,used_luna=1..}] run tellraw @a [{"text":"¡Luna ha salvado a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" de manera épica!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_luna=1..}] run tellraw @a [{"text":"¡Luna ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" de manera épica!",color:"yellow",bold:false}]
 
 # ===== UMIEMPI PATITAS =====
 # Detectar si el jugador tiene el tótem de Patitas en la mano principal
@@ -236,7 +236,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_patitas matches 1.. run scoreboard players remove @s used_patitas 1
 # Mostrar mensaje cuando se usa el tótem de Patitas
-execute as @a[scores={used_totem=1,used_patitas=1..}] run tellraw @a [{"text":"¡Patitas le ha dado un masaje a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" con sus patitas!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_patitas=1..}] run tellraw @a [{"text":"¡Patitas le ha dado un masaje a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" con sus patitas!",color:"yellow",bold:false}]
 
 # ===== VAYNILO FELIPE =====
 # Detectar si el jugador tiene el tótem de Felipe en la mano principal
@@ -246,7 +246,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_felipe matches 1.. run scoreboard players remove @s used_felipe 1
 # Mostrar mensaje cuando se usa el tótem de Felipe
-execute as @a[scores={used_totem=1,used_felipe=1..}] run tellraw @a [{"text":"¡Felipe ha roído a la muerte hasta el último hueso salvando a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_felipe=1..}] run tellraw @a [{"text":"¡Felipe ha roído a la muerte hasta el último hueso salvando a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:"!",color:"yellow",bold:false}]
 
 # ===== VORTI HDS =====
 # Detectar si el jugador tiene el tótem de HDS en la mano principal
@@ -256,7 +256,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_hds matches 1.. run scoreboard players remove @s used_hds 1
 # Mostrar mensaje cuando se usa el tótem de HDS
-execute as @a[scores={used_totem=1,used_hds=1..}] run tellraw @a [{"text":"¡",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" ha vuelto a empezar el ciclo!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_hds=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" ha vuelto a empezar el ciclo!",color:"yellow",bold:false}]
 
 # ===== WHISWIIM DÜNYA =====
 # Detectar si el jugador tiene el tótem de Dünya en la mano principal
@@ -266,7 +266,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_dunya matches 1.. run scoreboard players remove @s used_dunya 1
 # Mostrar mensaje cuando se usa el tótem de Dünya
-execute as @a[scores={used_totem=1,used_dunya=1..}] run tellraw @a [{"text":"¡Dünya ha mostrado tanta indiferencia que ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" se ha curado a si mismo!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_dunya=1..}] run tellraw @a [{"text":"¡Dünya ha mostrado tanta indiferencia que ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" se ha curado a si mismo!",color:"yellow",bold:false}]
 
 # ===== WILLY LANCER =====
 # Detectar si el jugador tiene el tótem de Lancer en la mano principal
@@ -276,7 +276,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_lancer matches 1.. run scoreboard players remove @s used_lancer 1
 # Mostrar mensaje cuando se usa el tótem de Lancer
-execute as @a[scores={used_totem=1,used_lancer=1..}] run tellraw @a [{"text":"¡Lancer es tan malo que la muerte ha huido y se ha olvidado de ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{"text":"!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_lancer=1..}] run tellraw @a [{"text":"¡Lancer es tan malo que la muerte ha huido y se ha olvidado de ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":"!",color:"yellow",bold:false}]
 
 # ===== XP BAKU =====
 # Detectar si el jugador tiene el tótem de Baku en la mano principal
@@ -286,7 +286,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_baku matches 1.. run scoreboard players remove @s used_baku 1
 # Mostrar mensaje cuando se usa el tótem de Baku
-execute as @a[scores={used_totem=1,used_baku=1..}] run tellraw @a [{"text":"¡Baku se ha quedado dormido en las piernas de ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:", evitando su muerte!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_baku=1..}] run tellraw @a [{"text":"¡Baku se ha quedado dormido en las piernas de ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:", evitando su muerte!",color:"yellow",bold:false}]
 
 # ===== ZER BULLET =====
 # Detectar si el jugador tiene el tótem de Bullet en la mano principal
@@ -296,7 +296,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_bullet matches 1.. run scoreboard players remove @s used_bullet 1
 # Mostrar mensaje cuando se usa el tótem de Bullet
-execute as @a[scores={used_totem=1,used_bullet=1..}] run tellraw @a [{"text":"¡",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" le ha disparado a la muerte con su balín, librándose de ella!",color:"yellow"}]
+execute as @a[scores={used_totem=1,used_bullet=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" le ha disparado a la muerte con su balín, librándose de ella!",color:"yellow",bold:false}]
 
 # ===== RESET =====
 # Resetear el marcador de uso de tótem para el siguiente uso
