@@ -1,0 +1,1 @@
+schedule function tr:admin/challenges/loading/1 0.5s
