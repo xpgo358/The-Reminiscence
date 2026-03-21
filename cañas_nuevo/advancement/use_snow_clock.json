@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "using_item": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:clock",
+          "predicates": {
+            "minecraft:item_model": {"model":"snowball_on_a_stick"}
+          }
+        }
+      }
+    }
+  },
+    "rewards": {
+        "function": "etr:happyghast_speed_scoreboard1"
+    }
+}
