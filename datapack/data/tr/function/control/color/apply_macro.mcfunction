@@ -1,0 +1,1 @@
+$execute as @s run locatorbar color #$(d1)$(d2)$(d3)$(d4)$(d5)$(d6)

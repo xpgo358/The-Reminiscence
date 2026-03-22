@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"\nPrevisualizacion: ","color":"yellow"},{"text":"⬤ ","color":"#$(d1)$(d2)$(d3)$(d4)$(d5)$(d6)","bold":true},{"text":"#$(d1)$(d2)$(d3)$(d4)$(d5)$(d6)","color":"#$(d1)$(d2)$(d3)$(d4)$(d5)$(d6)","bold":true}]

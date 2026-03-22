@@ -5,6 +5,13 @@ scoreboard objectives remove prank-level
 scoreboard objectives remove recording-status
 scoreboard objectives remove streaming-status
 scoreboard objectives remove afk-status
+scoreboard objectives remove color-step
+scoreboard objectives remove color-d1
+scoreboard objectives remove color-d2
+scoreboard objectives remove color-d3
+scoreboard objectives remove color-d4
+scoreboard objectives remove color-d5
+scoreboard objectives remove color-d6
 
 # Triggers
 scoreboard objectives remove prank
@@ -13,6 +20,8 @@ scoreboard objectives remove recording
 scoreboard objectives remove help
 scoreboard objectives remove rules
 scoreboard objectives remove afk
+scoreboard objectives remove color
+scoreboard objectives remove colorpick
 
 # Health scoreboard
 scoreboard objectives remove health
