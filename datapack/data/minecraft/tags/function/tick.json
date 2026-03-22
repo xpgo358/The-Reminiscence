@@ -1,6 +1,7 @@
 {
   "values": [
     "tr:minecraft/tick",
-    "totems:minecraft/tick"
+    "totems:minecraft/tick",
+    "qol:minecraft/tick"
   ]
 }

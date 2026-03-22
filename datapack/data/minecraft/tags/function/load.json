@@ -1,6 +1,7 @@
 {
   "values": [
     "tr:minecraft/load",
-    "totems:minecraft/load"
+    "totems:minecraft/load",
+    "qol:minecraft/load"
   ]
 }

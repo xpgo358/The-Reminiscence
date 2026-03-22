@@ -1,1 +1,0 @@
-schedule function etr:happyghastspeed_scoreboard2 5t replace

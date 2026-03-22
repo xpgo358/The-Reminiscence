@@ -1,2 +1,0 @@
-execute as @a[advancements={etr:use_snow_clock=true}] run scoreboard players add @s snowonastick 1
-execute as @a[advancements={etr:use_snow_clock=true}] run advancement revoke @s only etr:use_snow_clock
