@@ -1,3 +1,0 @@
-function qol:vehicle_speeds/pig_speed
-function qol:vehicle_speeds/strider_speed
-function qol:vehicle_speeds/happyghast_speed

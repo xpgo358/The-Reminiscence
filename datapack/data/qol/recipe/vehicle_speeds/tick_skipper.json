@@ -3,20 +3,20 @@
   "category": "misc",
   "ingredients": [
     [
-      "minecraft:fishing_rod"
+      "minecraft:warped_fungus"
     ],
     [
       "minecraft:snowball"
+    ],
+    [
+      "minecraft:carrot"
     ]
   ],
   "result": {
     "id": "minecraft:clock",
     "components": {
-      "minecraft:item_name": "Caña con bola de nieve",
-      "minecraft:item_model": "snowball_on_a_stick",
-      "minecraft:consumable": {
-        "consume_seconds": 1000000000
-      }
+      "minecraft:item_name": "Tick skipper",
+      "minecraft:item_model": "tick_skipper"
     },
     "count": 1
   }

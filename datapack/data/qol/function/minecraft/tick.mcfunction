@@ -1,1 +1,1 @@
-function qol:vehicle_speeds/minecraft/tick
+function qol:vehicle_speeds/admin/tick
