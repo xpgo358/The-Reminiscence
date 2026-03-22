@@ -1,1 +1,1 @@
-function qol:happyghast/admin/tick
+function qol:vehicle_speeds/minecraft/tick

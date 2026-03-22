@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "",
   "category": "misc",
   "ingredients": [
     [
@@ -14,7 +13,10 @@
     "id": "minecraft:clock",
     "components": {
       "minecraft:item_name": "Caña con bola de nieve",
-      "minecraft:item_model": "snowball_on_a_stick"
+      "minecraft:item_model": "snowball_on_a_stick",
+      "minecraft:consumable": {
+        "consume_seconds": 1000000000
+      }
     },
     "count": 1
   }
