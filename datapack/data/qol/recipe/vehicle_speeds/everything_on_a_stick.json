@@ -15,8 +15,12 @@
   "result": {
     "id": "minecraft:clock",
     "components": {
-      "minecraft:item_name": "Tick skipper",
-      "minecraft:item_model": "tick_skipper"
+      "minecraft:item_name": "Everything on a Stick",
+      "minecraft:item_model": "everything_on_a_stick",
+      "minecraft:lore": [
+        "Hold it on your hand to accelerate your pig, strider or happy ghast.",
+        "Mantenlo en tu mano para acelerar tu cerdo, strider o ghast feliz."
+      ]
     },
     "count": 1
   }
