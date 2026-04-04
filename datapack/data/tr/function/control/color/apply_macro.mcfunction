@@ -1,1 +1,1 @@
-$execute as @s run locatorbar color #$(d1)$(d2)$(d3)$(d4)$(d5)$(d6)
+$execute as @s run waypoint modify @s color hex $(d1)$(d2)$(d3)$(d4)$(d5)$(d6)
