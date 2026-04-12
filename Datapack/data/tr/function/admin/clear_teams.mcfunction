@@ -3,7 +3,9 @@
 # Remove all teams related to the prank system, recording and streaming
 
 # AFK
-team remove AFK
+team remove AFK_OVERWORLD
+team remove AFK_NETHER
+team remove AFK_END
 
 # Prank 0
 team remove t_p0_r0_s0

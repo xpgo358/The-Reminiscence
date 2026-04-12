@@ -2,9 +2,15 @@
 ## Create teams for all prank/recording/streaming status combinations
 
 # AFK
-team add AFK
-team modify AFK color gray
-team modify AFK suffix {text:" ⌀",color:"gray",bold:true,hover_event:{action:show_text,value:{text:"",extra:[{text:"AFK:",color:"gray",bold:true},{text:" ¡Estoy AFK! Si necesitas algo, hablame por privado o deja un mensaje después del sonido.",color:"white"}]}}}
+team add AFK_OVERWORLD
+team modify AFK_OVERWORLD color gray
+team modify AFK_OVERWORLD suffix {text:" ",color:"gray",extra:[{text:"⌀",color:"gray",bold:true},{text:" ☀",color:"dark_green",bold:false}],hover_event:{action:show_text,value:{text:"",extra:[{text:"AFK - OVERWORLD:",bold:true,color: "dark_green"},{text:" Estoy AFK. Si necesitas algo, hablame por privado o deja un mensaje después del sonido.",color:"white"}]}}}
+team add AFK_NETHER
+team modify AFK_NETHER color gray
+team modify AFK_NETHER suffix {text:" ",color:"gray",extra:[{text:"⌀",color:"gray",bold:true},{text:" 🔥",color:"dark_red",bold:false}],hover_event:{action:show_text,value:{text:"",extra:[{text:"AFK - NETHER:",bold:true,color: "dark_red"},{text:" Estoy AFK. Si necesitas algo, hablame por privado o deja un mensaje después del sonido.",color:"white"}]}}}
+team add AFK_END
+team modify AFK_END color gray
+team modify AFK_END suffix {text:" ",color:"gray",extra:[{text:"⌀",color:"gray",bold:true},{text:" ✦",color:"dark_purple",bold:false}],hover_event:{action:show_text,value:{text:"",extra:[{text:"AFK - END:",bold:true,color: "dark_purple"},{text:" Estoy AFK. Si necesitas algo, hablame por privado o deja un mensaje después del sonido.",color:"white"}]}}}
 
 # Prank 0
 team add t_p0_r0_s0

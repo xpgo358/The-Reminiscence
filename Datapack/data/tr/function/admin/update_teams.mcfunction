@@ -4,7 +4,9 @@ team leave @a
 ## Assign players to the correct team based on their scoreboard values
 
 # AFK
-execute as @a[scores={afk-status=1}] run team join AFK @s
+execute as @a[scores={afk-status=1}] at @s if dimension minecraft:overworld run team join AFK_OVERWORLD @s
+execute as @a[scores={afk-status=1}] at @s if dimension minecraft:the_nether run team join AFK_NETHER @s
+execute as @a[scores={afk-status=1}] at @s if dimension minecraft:the_end run team join AFK_END @s
 
 # Prank 0
 execute as @a[scores={afk-status=0,prank-level=0,recording-status=0,streaming-status=0}] run team join t_p0_r0_s0 @s
