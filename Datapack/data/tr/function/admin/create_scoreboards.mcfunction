@@ -33,6 +33,7 @@ scoreboard objectives add streaming trigger
 scoreboard objectives add recording trigger
 scoreboard objectives add help trigger
 scoreboard objectives add rules trigger
+scoreboard objectives add version trigger
 scoreboard objectives add afk trigger
 scoreboard objectives add color trigger
 scoreboard objectives add colorpick trigger

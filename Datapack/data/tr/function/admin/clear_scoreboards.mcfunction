@@ -19,6 +19,7 @@ scoreboard objectives remove streaming
 scoreboard objectives remove recording
 scoreboard objectives remove help
 scoreboard objectives remove rules
+scoreboard objectives remove version
 scoreboard objectives remove afk
 scoreboard objectives remove color
 scoreboard objectives remove colorpick
