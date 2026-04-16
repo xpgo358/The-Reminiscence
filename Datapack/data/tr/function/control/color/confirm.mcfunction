@@ -1,2 +1,2 @@
-function tr:control/color/confirm_macro with storage tr:color selected
+function tr:control/color/confirm_macro with storage tr:color
 tellraw @s [{"text":"Elige: ","color":"yellow"},{"text":"[Confirmar]","color":"green","click_event":{"action":"run_command","command":"/trigger colorpick set 1"}},{"text":" "},{"text":"[Rehacer]","color":"red","click_event":{"action":"run_command","command":"/trigger colorpick set 0"}}]

@@ -29,7 +29,9 @@ scoreboard objectives remove health
 
 
 # Init Tag and reset scores for all players
+tag @a remove update2
 tag @a remove update1
+tag @a remove tr_init
 scoreboard players reset *
 
 #tellraw @a {"text":"[tr] Scoreboards limpiados y datos de jugadores reiniciados","color":"green"}

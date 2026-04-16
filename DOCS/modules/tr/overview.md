@@ -24,10 +24,17 @@ Secuencia visual:
 Archivo principal: [Datapack/data/tr/function/minecraft/tick.mcfunction](../../../Datapack/data/tr/function/minecraft/tick.mcfunction)
 
 Acciones por tick:
-1. Inicializa jugadores nuevos (tag update1 + valores base).
+1. Reset total: Inicializa jugadores sin tag update2 llamando a [Datapack/data/tr/function/control/init_player.mcfunction](../../../Datapack/data/tr/function/control/init_player.mcfunction).
 2. Reasigna teams para mantener estado visual sincronizado.
 3. Ejecuta triggers y comandos de jugador.
 4. Lanza mensaje de retorno al detectar leave=1.
+
+Detalles de inicializacion delegada en init_player (ocurre una sola vez por ciclo update2):
+- Scoreboards de estado inicializados a 0 (prank-level, recording-status, streaming-status, afk-status).
+- Scoreboards de color (color-d1..color-d6) inicializados a 15 (hex F).
+- Storage unico tr:color consolidado como compound plano con d1..d6 en FFFFFF para persistencia y compatibilidad de versiones.
+- Waypoint aplicado con color FFFFFF.
+- Tag update2 marcado para prevenir reinicializaciones.
 
 ## Modelo de estado
 ### Scoreboards de estado

@@ -4,17 +4,20 @@
 Documentar comandos de operacion para reinicio, reconstruccion y anuncios especiales del namespace TR.
 
 ## Funciones administrativas principales
-### Reset de scoreboards
+### Reset de scoreboards y reinicializacion forzada
 - [Datapack/data/tr/function/admin/clear_scoreboards.mcfunction](../../../Datapack/data/tr/function/admin/clear_scoreboards.mcfunction)
 
 Efectos:
 1. Elimina objectives de estado y triggers de TR.
 2. Elimina scoreboard de health en tab.
-3. Quita tag update1 de todos los jugadores.
-4. Ejecuta scoreboard players reset *.
+3. Quita tag update2 de todos los jugadores (fuerza reinit de jugador en próximo tick).
+4. Quita tag update1 legado (compatibilidad pre-existente).
+5. Ejecuta scoreboard players reset *.
 
 Uso recomendado:
-- Antes de recrear sistema completo en entornos de test o migraciones.
+- Antes de recrear sistema completo en entornos de test.
+- Al ejecutar: todos los jugadores recibirán reset total (scoreboards + storage + waypoint) en próximo tick.
+- Siempre seguir con create_scoreboards para mantener consistencia.
 
 ### Creacion de scoreboards
 - [Datapack/data/tr/function/admin/create_scoreboards.mcfunction](../../../Datapack/data/tr/function/admin/create_scoreboards.mcfunction)

@@ -17,9 +17,15 @@ Logica principal:
 1. Si afk trigger se activa y afk-status=0, se marca tag temporal tr_afk_on.
 2. Si afk trigger se activa y afk-status=1, se marca tag temporal tr_afk_off.
 3. Se actualiza afk-status (1 o 0).
-4. Se recalculan teams.
-5. Se anuncia mensaje global de entrada/salida AFK.
-6. Se limpian tags temporales.
+4. En AFK ON se aplica color gris 808080 al waypoint del jugador.
+5. En AFK OFF se restaura el color previo persistido desde storage tr:color con d1..d6 mediante la funcion de restauracion.
+6. Se recalculan teams.
+7. Se anuncia mensaje global de entrada/salida AFK.
+8. Se limpian tags temporales.
+
+Restauracion de color:
+- [Datapack/data/tr/function/control/color/apply_saved.mcfunction](../../../Datapack/data/tr/function/control/color/apply_saved.mcfunction)
+- Si algun digito color-d1..color-d6 es invalido, aplica fallback FFFFFF.
 
 ## Teams AFK por dimension
 Definicion en:

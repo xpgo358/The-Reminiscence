@@ -33,7 +33,8 @@ Archivo: [Datapack/data/qol/function/minecraft/load.mcfunction](../Datapack/data
 ## 3) Flujo recurrente (tick)
 ### TR
 Archivo: [Datapack/data/tr/function/minecraft/tick.mcfunction](../Datapack/data/tr/function/minecraft/tick.mcfunction)
-- Inicializa jugadores nuevos con valores base (una sola vez mediante tag update1).
+- Ejecuta reset total en próximo tick para jugadores sin tag update2 (delegacion a init_player).
+- Inicializa scoreboards, storage unico tr:color y waypoint con valores base FFFFFF (una sola vez mediante tag update2).
 - Recalcula teams cada tick para mantener prefijos/sufijos consistentes.
 - Evalua triggers de jugador (AFK, prank, streaming, recording, color, ayuda, reglas, version).
 - Emite mensaje de bienvenida para jugadores que regresan (leave).

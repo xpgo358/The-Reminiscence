@@ -1,9 +1,5 @@
-## Initialize new players (give default scores once)
-execute as @a[tag=!update1] run scoreboard players set @s prank-level 0
-execute as @a[tag=!update1] run scoreboard players set @s recording-status 0
-execute as @a[tag=!update1] run scoreboard players set @s streaming-status 0
-execute as @a[tag=!update1] run scoreboard players set @s afk-status 0
-execute as @a[tag=!update1] run tag @s add update1
+## Initialize all players (give default scores and color storage once)
+execute as @a[tag=!update2] run function tr:control/init_player
 
 # Update teams every tick so prefixes stay in sync
 function tr:admin/update_teams

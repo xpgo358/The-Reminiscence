@@ -7,16 +7,13 @@
       "minecraft:totem_of_undying"
     ],
     [
-      "minecraft:dandelion"
-    ],
-    [
-      "minecraft:gold_ingot"
+      "minecraft:golden_dandelion"
     ]
   ],
   "result": {
     "id": "minecraft:totem_of_undying",
     "components": {
-      "minecraft:item_name": "Old Totem",
+      "minecraft:item_name": "Golden Dandelion",
       "minecraft:item_model": "crisho_totem"
     },
     "count": 1

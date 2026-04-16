@@ -56,6 +56,9 @@ Entrega de recetas en bloque:
 Nomenclatura observada:
 - Un archivo de receta por variante de totem, alineado con item_model y mensajes.
 
+Referencia explicita validada en esta iteracion:
+- La receta [Datapack/data/totems/recipe/crisho_totem.json](../../Datapack/data/totems/recipe/crisho_totem.json) mantiene `minecraft:item_model` en `crisho_totem` y define el nombre visible del resultado como `Golden Dandelion`, usando `minecraft:golden_dandelion` como ingrediente tematico.
+
 ## Mantenimiento
 - Limpiar scoreboards de totems:
   - [Datapack/data/totems/function/admin/clear_scoreboards.mcfunction](../../Datapack/data/totems/function/admin/clear_scoreboards.mcfunction)
