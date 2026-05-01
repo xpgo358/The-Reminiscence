@@ -1,8 +1,8 @@
 # The Reminiscence Datapack - Documentacion General
 
 ## Estado de esta iteracion
-- Cambios validados desde minidocs: actualizacion de referencias de version del proyecto/datapack a 2.0.0.
-- Cambios validados desde minidocs: receta de Crisho actualizada con nombre visible Golden Dandelion, conservando item_model crisho_totem.
+- Cambios validados desde minidocs: actualizacion de referencias de version del proyecto/datapack a 2.0.1.
+- Cambios validados desde minidocs: receta de Crisho actualizada, conservando item_model crisho_totem.
 - Reporte de validacion final: unresolved issues = 0.
 
 ## Objetivo del datapack
@@ -13,7 +13,7 @@ The Reminiscence es un datapack modular para Java Edition que centraliza tres bl
 
 ## Compatibilidad de pack
 Segun [Datapack/pack.mcmeta](../Datapack/pack.mcmeta):
-- Descripcion del pack: The Reminiscence Data Pack - 2.0.0
+- Descripcion del pack: The Reminiscence Data Pack - 2.0.1
 - Rango de formato: min_format 101, max_format 101
 
 Referencia externa verificada:

@@ -19,7 +19,7 @@ Muestra:
 
 ### /trigger version
 Muestra version del datapack:
-- v2.0.0
+- v2.0.1
 
 Condicion especial de habilitacion observada:
 - version se habilita cuando el jugador tiene la combinacion

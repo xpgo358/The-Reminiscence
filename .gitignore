@@ -1,0 +1,6 @@
+
+# Ignore minidocs directory
+/minidocs/
+
+# Ignore GitHub workflow or related metadata directory
+/.github/

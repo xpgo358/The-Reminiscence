@@ -1,3 +1,3 @@
-# Versión actual - 2.0.0
+# Versión actual - 2.0.1
 
 [Documentación](./docs/README.md)
