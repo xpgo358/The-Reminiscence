@@ -5,6 +5,7 @@ Permitir que cada jugador marque/desmarque estado AFK y reflejarlo inmediatament
 - Mensajeria global.
 - Team asignado por dimension.
 - Sufijo y hover descriptivo del jugador.
+- HUD persistente en actionbar para jugadores AFK (cadencia de 1 segundo).
 
 ## Entrada de usuario
 Trigger utilizado:
@@ -22,6 +23,23 @@ Logica principal:
 6. Se recalculan teams.
 7. Se anuncia mensaje global de entrada/salida AFK.
 8. Se limpian tags temporales.
+
+HUD AFK persistente:
+- Funcion: [Datapack/data/tr/function/control/afk/display_actionbar.mcfunction](../../../Datapack/data/tr/function/control/afk/display_actionbar.mcfunction)
+- Orquestacion desde tick: [Datapack/data/tr/function/minecraft/tick.mcfunction](../../../Datapack/data/tr/function/minecraft/tick.mcfunction)
+- Cadencia: 20 ticks (1 segundo) usando `afk-hud-timer`.
+- Lock anticolision: `afk-hud-lock` evita sobrescribir actionbars de secuencias de carga/challenge.
+
+Lifecycle de scoreboards HUD:
+- Creacion: [Datapack/data/tr/function/admin/create_scoreboards.mcfunction](../../../Datapack/data/tr/function/admin/create_scoreboards.mcfunction)
+- Inicializacion por jugador: [Datapack/data/tr/function/control/init_player.mcfunction](../../../Datapack/data/tr/function/control/init_player.mcfunction)
+- Limpieza: [Datapack/data/tr/function/admin/clear_scoreboards.mcfunction](../../../Datapack/data/tr/function/admin/clear_scoreboards.mcfunction)
+
+Puntos de lock/unlock:
+- Datapack loading start: [Datapack/data/tr/function/minecraft/loading/1.mcfunction](../../../Datapack/data/tr/function/minecraft/loading/1.mcfunction)
+- Datapack loading end: [Datapack/data/tr/function/minecraft/loading/message.mcfunction](../../../Datapack/data/tr/function/minecraft/loading/message.mcfunction)
+- Challenge loading start: [Datapack/data/tr/function/admin/challenges/loading/1.mcfunction](../../../Datapack/data/tr/function/admin/challenges/loading/1.mcfunction)
+- Challenge loading end: [Datapack/data/tr/function/admin/challenges/loading/message.mcfunction](../../../Datapack/data/tr/function/admin/challenges/loading/message.mcfunction)
 
 Restauracion de color:
 - [Datapack/data/tr/function/control/color/apply_saved.mcfunction](../../../Datapack/data/tr/function/control/color/apply_saved.mcfunction)

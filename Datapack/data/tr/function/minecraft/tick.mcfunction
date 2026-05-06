@@ -9,3 +9,5 @@ function tr:control/triggers
 
 # Join message
 execute as @a if score @s leave matches 1 run function tr:control/join_message
+
+# AFK actionbar handled on toggle to avoid tick noise

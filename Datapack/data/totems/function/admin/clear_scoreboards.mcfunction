@@ -32,5 +32,7 @@ scoreboard objectives remove used_dunya
 scoreboard objectives remove used_lancer
 scoreboard objectives remove used_baku
 scoreboard objectives remove used_bullet
+scoreboard objectives remove used_otter
+scoreboard objectives remove used_golden_orb
 
 #tellraw @a {"text":"[totems] Marcadores eliminados","color":"green"}

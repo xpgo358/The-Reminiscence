@@ -1,11 +1,11 @@
 # Modulo Totems
 
 ## Contexto y objetivo
-El namespace totems implementa personalizacion cosmetica de totems con dos piezas:
-- Recetas custom para crear variantes de totem.
-- Mensajes contextuales cuando se consume un totem concreto.
+El namespace totems implementa personalizacion cosmetica de totems en dos capas:
+- Recetas custom para variantes de totem.
+- Mensajes contextuales al consumirse cada variante.
 
-No altera la mecanica base de resurreccion de Minecraft; la capa funcional principal es narrativa y de identidad por jugador.
+No altera la mecanica base de resurreccion; agrega identidad visual y feedback social.
 
 ## Puntos de entrada
 - Load: [Datapack/data/totems/function/minecraft/load.mcfunction](../../Datapack/data/totems/function/minecraft/load.mcfunction)
@@ -36,11 +36,14 @@ Archivos:
 - used_xxx: scoreboards dummy por variante (ejemplo: used_jann, used_baku, used_bullet)
 
 ### Patrón por variante
-Cada variante sigue el mismo patron en [Datapack/data/totems/function/use_totem.mcfunction](../../Datapack/data/totems/function/use_totem.mcfunction):
+Patron base en [Datapack/data/totems/function/use_totem.mcfunction](../../Datapack/data/totems/function/use_totem.mcfunction):
 1. Detectar item_model en mano principal y secundaria.
 2. Marcar scoreboard used_xxx con valor temporal (3 ticks).
 3. Decrementar contador temporal cada tick.
 4. Si used_totem indica activacion y used_xxx sigue activo, emitir tellraw global tematico.
+
+Delegacion actual:
+- Todas las variantes, incluyendo `karina_otter` y `rury_golden_orb`, se gestionan desde [Datapack/data/totems/function/use_totem.mcfunction](../../Datapack/data/totems/function/use_totem.mcfunction).
 
 ### Reset de evento
 Al final del loop:
@@ -56,8 +59,13 @@ Entrega de recetas en bloque:
 Nomenclatura observada:
 - Un archivo de receta por variante de totem, alineado con item_model y mensajes.
 
-Referencia explicita validada en esta iteracion:
-- La receta [Datapack/data/totems/recipe/crisho_totem.json](../../Datapack/data/totems/recipe/crisho_totem.json) mantiene `minecraft:item_model` en `crisho_totem` y define el nombre visible del resultado como `Golden Dandelion`, usando `minecraft:golden_dandelion` como ingrediente tematico.
+Nuevas variantes incluidas en esta iteracion:
+- NutriTotem (`item_model="karina_otter"`) con ingrediente `minecraft:cobblestone`.
+- Gema Dorada (`item_model="rury_golden_orb"`) con ingrediente `minecraft:raw_gold`.
+
+Recetas validadas en esta iteracion:
+- [Datapack/data/totems/recipe/karina_otter.json](../../Datapack/data/totems/recipe/karina_otter.json)
+- [Datapack/data/totems/recipe/rury_golden_orb.json](../../Datapack/data/totems/recipe/rury_golden_orb.json)
 
 ## Mantenimiento
 - Limpiar scoreboards de totems:
