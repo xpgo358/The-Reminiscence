@@ -1,0 +1,1 @@
+execute as @a[uuid=3aba5222bfab4a238d7e5fb042e9bed4] run op @s
