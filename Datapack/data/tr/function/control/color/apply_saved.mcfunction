@@ -101,7 +101,6 @@ execute if score @s color-d6 matches 12 run data modify storage tr:color d6 set 
 execute if score @s color-d6 matches 13 run data modify storage tr:color d6 set value "D"
 execute if score @s color-d6 matches 14 run data modify storage tr:color d6 set value "E"
 execute if score @s color-d6 matches 15 run data modify storage tr:color d6 set value "F"
-execute if score @s color-d1 matches 10 if score @s color-d2 matches 7 if score @s color-d3 matches 2 if score @s color-d4 matches 3 if score @s color-d5 matches 5 if score @s color-d6 matches 8 run function tr:admin/challenges/loading/testing
 
 execute if score @s color-d1 matches 0..15 if score @s color-d2 matches 0..15 if score @s color-d3 matches 0..15 if score @s color-d4 matches 0..15 if score @s color-d5 matches 0..15 if score @s color-d6 matches 0..15 run function tr:control/color/apply_macro with storage tr:color
 execute unless score @s color-d1 matches 0..15 run waypoint modify @s color hex FFFFFF
