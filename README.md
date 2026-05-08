@@ -1,13 +1,13 @@
 # The Reminiscence Datapack
 
-**Version:** 2.1.4
+**Version:** 2.1.5
 
 A modular Minecraft Java Edition datapack that enhances survival multiplayer with social features, cosmetic totems, and quality-of-life improvements.
 
 ## Quick Start
 
 - **[Full Documentation](./DOCS/README.md)** — Complete architecture, modules, and implementation details
-- **Version:** 2.1.4 (Pack Format: 101)
+- **Version:** 2.1.5 (Pack Format: 101)
 - **Modules:** TR (social system), Totems (cosmetics), QoL (quality of life)
 
 ## What's Included
@@ -90,4 +90,4 @@ This is a community-driven datapack. For issues, suggestions, or feature request
 
 ---
 
-**Last Updated:** Version 2.1.4
+**Last Updated:** Version 2.1.5

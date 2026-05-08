@@ -118,6 +118,14 @@ execute as @a if score @s used_thor matches 1.. run scoreboard players remove @s
 # Mostrar mensaje cuando se usa el tótem de Thor
 execute as @a[scores={used_totem=1,used_thor=1..}] run tellraw @a [{"text":"¡Thor le ha metido un martillazo en la cabeza a la muerte y ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" de volverse un poco Loki!",color:"yellow",bold:false}]
 
+# ===== KARINA OTTER =====
+# Detectar si el jugador tiene el tótem de Otter en la mano
+execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="karina_otter"] run scoreboard players set @s used_otter 3
+# Reducir el contador del tótem cada tick
+execute as @a if score @s used_otter matches 1.. run scoreboard players remove @s used_otter 1
+# Mostrar mensaje cuando se usa el tótem de Otter
+execute as @a[scores={used_totem=1,used_otter=1..}] run tellraw @a [{"text":"¡Una nutria ha usado su alma (y una cuchara) para revivir a ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" en la hoguera!",color:"yellow",bold:false}]
+
 # ===== KRIS KNIGHT =====
 # Detectar si el jugador tiene el tótem de Knight en la mano principal
 execute as @a if items entity @s weapon.mainhand minecraft:totem_of_undying[item_model="kris_knight"] run scoreboard players set @s used_knight 3
@@ -207,6 +215,14 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 execute as @a if score @s used_danny matches 1.. run scoreboard players remove @s used_danny 1
 # Mostrar mensaje cuando se usa el tótem de Danny
 execute as @a[scores={used_totem=1,used_danny=1..}] run tellraw @a [{"text":"¡No es Garfield, es Danny, que ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" comiéndose la muerte de un bocado!",color:"yellow",bold:false}]
+
+# ===== RURY GOLDEN ORB ======
+# Detectar si el jugador tiene el tótem de Golden Orb en la mano
+execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="rury_golden_orb"] run scoreboard players set @s used_golden_orb 3
+# Reducir el contador del tótem cada tick
+execute as @a if score @s used_golden_orb matches 1.. run scoreboard players remove @s used_golden_orb 1
+# Mostrar mensaje cuando se usa el tótem de Golden Orb
+execute as @a[scores={used_totem=1,used_golden_orb=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" estuvo a un suspiro del Juicio Final, pero la gema dorada ha intervenido para salvarle la vida.!",color:"yellow",bold:false}]
 
 # ===== SAMA MIKA =====
 # Detectar si el jugador tiene el tótem de Mika en la mano principal
