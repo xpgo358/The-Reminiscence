@@ -1,2 +1,2 @@
 ## Simple AFK actionbar
-title @s actionbar [{"text":"ESTAS AFK","color":"gray","bold":true}]
+title @s actionbar [{"text":"ESTÁS AFK","color":"gray","bold":true}]

@@ -1,6 +1,12 @@
 #tellraw @a {"text":"[tr] Creando teams...","color":"yellow"}
 ## Create teams for all prank/recording/streaming status combinations
 
+# Recording
+team add recording
+
+# Streaming
+team add streaming
+
 # AFK
 team add AFK_OVERWORLD
 team modify AFK_OVERWORLD color gray

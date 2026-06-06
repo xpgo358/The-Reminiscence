@@ -2,6 +2,12 @@
 
 # Remove all teams related to the prank system, recording and streaming
 
+# Recording
+team remove recording
+
+# Streaming
+team remove streaming
+
 # AFK
 team remove AFK_OVERWORLD
 team remove AFK_NETHER
