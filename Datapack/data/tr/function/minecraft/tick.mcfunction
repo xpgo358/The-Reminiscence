@@ -9,6 +9,6 @@ function tr:control/triggers
 
 # Join message
 execute as @a if score @s leave matches 1 run function tr:control/join_message
-execute as @a if score @s leave matches 1 run schedule function tr:control/join_afk_recording_streaming_message 5s replace
 
-# AFK actionbar handled on toggle to avoid tick noise
+# Warnings
+function tr:control/warnings/warnings

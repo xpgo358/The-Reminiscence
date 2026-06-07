@@ -2,13 +2,6 @@
 team leave @a
 
 ## Assign players to the correct team based on their scoreboard values
-
-# Recording
-execute as @a[scores={recording-status=1}] run team join recording @s
-
-# Streaming
-execute as @a[scores={streaming-status=1}] run team join streaming @s
-
 # AFK
 execute as @a[scores={afk-status=1}] at @s if dimension minecraft:overworld run team join AFK_OVERWORLD @s
 execute as @a[scores={afk-status=1}] at @s if dimension minecraft:the_nether run team join AFK_NETHER @s

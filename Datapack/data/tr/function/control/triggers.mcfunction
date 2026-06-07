@@ -5,10 +5,9 @@ execute as @a[scores={afk=0..,afk-status=0}] run tag @s add tr_afk_on
 execute as @a[scores={afk=0..,afk-status=1}] run tag @s add tr_afk_off
 execute as @a[tag=tr_afk_on] run scoreboard players set @s afk-status 1
 execute as @a[tag=tr_afk_off] run scoreboard players set @s afk-status 0
-execute as @a[tag=tr_afk_off] run tellraw @a [{"text":"¡","color":"gray",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está AFK!","color":"gray",bold:false}]
 execute as @a[tag=tr_afk_on] run tellraw @a [{"text":"¡","color":"gray",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" está AFK!","color":"gray",bold:false}]
+execute as @a[tag=tr_afk_off] run tellraw @a [{"text":"¡","color":"gray",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está AFK!","color":"gray",bold:false}]
 # Persistent AFK actionbar for all AFK players (runs every tick via triggers)
-execute as @a[scores={afk-status=1}] run title @s actionbar [{"text":"ESTAS AFK","color":"gray","bold":true}]
 execute as @a[tag=tr_afk_on] run waypoint modify @s color hex 808080
 execute as @a[tag=tr_afk_off] run function tr:control/color/apply_saved
 execute as @a[tag=tr_afk_on] run tag @s remove tr_afk_on
@@ -23,8 +22,8 @@ execute as @a[scores={streaming=0..,streaming-status=1}] run tag @s add tr_strea
 execute as @a[tag=tr_stream_on] run scoreboard players set @s streaming-status 1
 execute as @a[tag=tr_stream_off] run scoreboard players set @s streaming-status 0
 function tr:admin/update_teams
-execute as @a[tag=tr_stream_off] run tellraw @a [{"text":"¡","color":"dark_purple",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está en directo!","color":"dark_purple",bold:false}]
 execute as @a[tag=tr_stream_on] run tellraw @a [{"text":"¡","color":"dark_purple",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" está en directo!","color":"dark_purple",bold:false}]
+execute as @a[tag=tr_stream_off] run tellraw @a [{"text":"¡","color":"dark_purple",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está en directo!","color":"dark_purple",bold:false}]
 execute as @a[tag=tr_stream_on] run tag @s remove tr_stream_on
 execute as @a[tag=tr_stream_off] run tag @s remove tr_stream_off
 
@@ -34,8 +33,8 @@ execute as @a[scores={recording=0..,recording-status=1}] run tag @s add tr_recor
 execute as @a[tag=tr_record_on] run scoreboard players set @s recording-status 1
 execute as @a[tag=tr_record_off] run scoreboard players set @s recording-status 0
 function tr:admin/update_teams
-execute as @a[tag=tr_record_off] run tellraw @a [{"text":"¡","color":"red",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está grabando!","color":"red",bold:false}]
 execute as @a[tag=tr_record_on] run tellraw @a [{"text":"¡","color":"red",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" está grabando!","color":"red",bold:false}]
+execute as @a[tag=tr_record_off] run tellraw @a [{"text":"¡","color":"red",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está grabando!","color":"red",bold:false}]
 execute as @a[tag=tr_record_on] run tag @s remove tr_record_on
 execute as @a[tag=tr_record_off] run tag @s remove tr_record_off
 
