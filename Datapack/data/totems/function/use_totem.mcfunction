@@ -44,7 +44,7 @@ execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model=
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_gojo matches 1.. run scoreboard players remove @s used_gojo 1
 # Mostrar mensaje cuando se usa el tótem de Gojo
-execute as @a[scores={used_totem=1,used_Gojo=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" se ha salvado de ser partido por la mitad!",color:"yellow",bold:false}]
+execute as @a[scores={used_totem=1,used_gojo=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" se ha salvado de ser partido por la mitad!",color:"yellow",bold:false}]
 
 # ===== CLUC MIXU =====
 # Detectar si el jugador tiene el tótem de Mixu en la mano principal
@@ -94,7 +94,7 @@ execute as @a if items entity @s weapon.offhand minecraft:totem_of_undying[item_
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_star matches 1.. run scoreboard players remove @s used_star 1
 # Mostrar mensaje cuando se usa el tótem de Star
-execute as @a[scores={used_totem=1,used_star=1..}] run tellraw @a [{"text":"¡El deseo de ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" librándole de las garras de la muerte!",color:"yellow",bold:false}]
+execute as @a[scores={used_totem=1,used_star=1..}] run tellraw @a [{"text":"¡El deseo de ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" se ha cumplido, salvándole de la muerte!",color:"yellow",bold:false}]
 
 # ===== GANDALF MOON =====
 # Detectar si el jugador tiene el tótem Moon en la mano
@@ -102,7 +102,7 @@ execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model=
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_moon matches 1.. run scoreboard players remove @s used_moon 1
 # Mostrar mensaje cuando se usa el tótem Moon
-execute as @a[scores={used_totem=1,used_moon=1..}] run tellraw @a [{"text":"¡La bendición de la Luna ha caído sobre ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" se ha salvado de ser partido por la mitad!",color:"yellow",bold:false}]
+execute as @a[scores={used_totem=1,used_moon=1..}] run tellraw @a [{"text":"¡La bendición de la Luna ha caído sobre ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" librándole de las garras de la muerte!",color:"yellow",bold:false}]
 
 # ===== ISMA FAIL =====
 # Detectar si el jugador tiene el tótem de Fail en la mano principal
@@ -148,7 +148,7 @@ execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model=
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_aysha matches 1.. run scoreboard players remove @s used_aysha 1
 # Mostrar mensaje cuando se usa el tótem de Aysha
-execute as @a[scores={used_totem=1,used_Aysha=1..}] run tellraw @a [{"text":"¡Una alma añeja salvó a ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":", cegándole temporalmente!",color:"yellow",bold:false}]
+execute as @a[scores={used_totem=1,used_aysha=1..}] run tellraw @a [{"text":"¡Una alma añeja salvó a ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":", cegándole temporalmente!",color:"yellow",bold:false}]
 
 
 # ===== KRIS KNIGHT =====
