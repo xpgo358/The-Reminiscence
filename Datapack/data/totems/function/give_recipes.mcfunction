@@ -2,14 +2,18 @@ recipe give @a totems:addy_jann
 recipe give @a totems:adiac_manchas
 recipe give @a totems:belbio_kiki
 recipe give @a totems:boom_tnt
+recipe give @a totems:carlos_gojo
 recipe give @a totems:cluc_mixu
 recipe give @a totems:crisho_totem
 recipe give @a totems:dalox_azalea
 recipe give @a totems:ernesto_fiona
 recipe give @a totems:estela_star
+recipe give @a totems:gandalf_moon
 recipe give @a totems:isma_fail
 recipe give @a totems:jolyne_laser
 recipe give @a totems:karen_thor
+recipe give @a totems:karina_otter
+recipe give @a totems:kler_aysha
 recipe give @a totems:kris_knight
 recipe give @a totems:laura_burbuja
 recipe give @a totems:lu_lala
@@ -19,6 +23,7 @@ recipe give @a totems:nebluno_neri
 recipe give @a totems:pamme_rich
 recipe give @a totems:phavern_ralsei
 recipe give @a totems:phos_danny
+recipe give @a totems:rury_golden_orb
 recipe give @a totems:sama_mika
 recipe give @a totems:sophia_luna
 recipe give @a totems:umiempi_patitas
@@ -28,5 +33,3 @@ recipe give @a totems:whiswiim_dunya
 recipe give @a totems:willy_lancer
 recipe give @a totems:xp_baku
 recipe give @a totems:zer_bullet
-recipe give @a totems:karina_otter
-recipe give @a totems:rury_golden_orb

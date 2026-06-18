@@ -34,5 +34,8 @@ scoreboard objectives add used_baku dummy
 scoreboard objectives add used_bullet dummy
 scoreboard objectives add used_otter dummy
 scoreboard objectives add used_golden_orb dummy
+scoreboard objectives add used_gojo dummy
+scoreboard objectives add used_moon dummy
+scoreboard objectives add used_aysha dummy
 
 #tellraw @a {"text":"[totems] Marcadores creados","color":"green"}
