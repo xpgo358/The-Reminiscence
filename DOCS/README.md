@@ -1,5 +1,8 @@
 # The Reminiscence Datapack - Documentación Detallada
 
+> [!IMPORTANT]
+> OUTDATED YA QUE NO ME HA DADO TIEMPO
+
 ## Objetivo del datapack
 The Reminiscence es un datapack modular para Java Edition que centraliza tres bloques funcionales:
 - TR: sistema social y de estado de jugadores (AFK, prank level, streaming, recording), mensajes y color del locator bar.
@@ -8,7 +11,7 @@ The Reminiscence es un datapack modular para Java Edition que centraliza tres bl
 
 ## Compatibilidad de pack
 Segun [Datapack/pack.mcmeta](../Datapack/pack.mcmeta):
-- Descripcion del pack: The Reminiscence Data Pack - 2.1.6
+- Descripcion del pack: The Reminiscence Data Pack - 2.2.0
 - Rango de formato: min_format 101, max_format 101
 
 Referencia externa verificada:
