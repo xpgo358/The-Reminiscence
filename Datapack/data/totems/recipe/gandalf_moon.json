@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "totems",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:totem_of_undying"
+    ],
+    [
+      "minecraft:amethyst_block"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:totem_of_undying",
+    "components": {
+      "minecraft:item_name": "Moon Shard",
+      "minecraft:item_model": "gandalf_moon"
+    },
+    "count": 1
+  }
+}
