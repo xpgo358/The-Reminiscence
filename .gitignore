@@ -3,3 +3,4 @@
 
 # Ignore GitHub workflow or related metadata directory
 /.github/
+/Server/
