@@ -11,7 +11,7 @@ The Reminiscence es un datapack modular para Java Edition que centraliza tres bl
 
 ## Compatibilidad de pack
 Segun [Datapack/pack.mcmeta](../Datapack/pack.mcmeta):
-- Descripcion del pack: The Reminiscence Data Pack - 2.2.0
+- Descripcion del pack: The Reminiscence Data Pack - 2.2.1
 - Rango de formato: min_format 101, max_format 101
 
 Referencia externa verificada:
