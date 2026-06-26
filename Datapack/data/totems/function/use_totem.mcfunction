@@ -96,6 +96,15 @@ execute as @a if score @s used_star matches 1.. run scoreboard players remove @s
 # Mostrar mensaje cuando se usa el tótem de Star
 execute as @a[scores={used_totem=1,used_star=1..}] run tellraw @a [{"text":"¡El deseo de ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" se ha cumplido, salvándole de la muerte!",color:"yellow",bold:false}]
 
+# ===== FIRE ARCANINE =====
+# Detectar si el jugador tiene el tótem de Arcanine en la mano
+execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="fire_arcanine"] run scoreboard players set @s used_arcanine 3
+# Reducir el contador del tótem cada tick
+execute as @a if score @s used_arcanine matches 1.. run scoreboard players remove @s used_arcanine 1
+# Mostrar mensaje cuando se usa el tótem de Arcanine
+execute as @a[scores={used_totem=1,used_arcanine=1..}] run tellraw @a [{"text":"¡Arcanine y ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" le han ganado el combate a la muerte!",color:"yellow",bold:false}]
+
+
 # ===== GANDALF MOON =====
 # Detectar si el jugador tiene el tótem Moon en la mano
 execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="gandalf_moon"] run scoreboard players set @s used_moon 3

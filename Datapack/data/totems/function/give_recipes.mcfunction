@@ -8,6 +8,7 @@ recipe give @a totems:crisho_totem
 recipe give @a totems:dalox_azalea
 recipe give @a totems:ernesto_fiona
 recipe give @a totems:estela_star
+recipe give @a totems:fire_arcanine
 recipe give @a totems:gandalf_moon
 recipe give @a totems:isma_fail
 recipe give @a totems:jolyne_laser

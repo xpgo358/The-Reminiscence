@@ -34,5 +34,6 @@ scoreboard objectives remove used_baku
 scoreboard objectives remove used_bullet
 scoreboard objectives remove used_otter
 scoreboard objectives remove used_golden_orb
+scoreboard objectives remove used_arcanine
 
 #tellraw @a {"text":"[totems] Marcadores eliminados","color":"green"}
