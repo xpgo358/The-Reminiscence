@@ -92,4 +92,4 @@ This is a community-driven datapack. For issues, suggestions, or feature request
 
 ---
 
-**Last Updated:** Version 2.2.1
+**Last Updated:** Version 2.2.2

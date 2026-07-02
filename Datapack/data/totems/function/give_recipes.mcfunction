@@ -24,6 +24,7 @@ recipe give @a totems:nebluno_neri
 recipe give @a totems:pamme_rich
 recipe give @a totems:phavern_ralsei
 recipe give @a totems:phos_danny
+recipe give @a totems:romo_berry_bunny
 recipe give @a totems:rury_golden_orb
 recipe give @a totems:sama_mika
 recipe give @a totems:sophia_luna
