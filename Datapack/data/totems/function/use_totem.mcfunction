@@ -214,7 +214,7 @@ execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model=
 # Reducir el contador del tótem cada tick
 execute as @a if score @s used_berry_bunny matches 1.. run scoreboard players remove @s used_berry_bunny 1
 # Mostrar mensaje cuando se usa el tótem Berry Bunny
-execute as @a[scores={used_totem=1,used_berry_bunny=1..}] run tellraw @a [{"text":"¡Un conejo dentro de una frutilla salvó a ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" de morir!",color:"yellow",bold:false}]
+execute as @a[scores={used_totem=1,used_berry_bunny=1..}] run tellraw @a [{"text":"¡La pata de la suerte de berry bunny salvó a ",color:"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" de la muerte!",color:"yellow",bold:false}]
 
 # ===== RURY GOLDEN ORB ======
 # Detectar si el jugador tiene el tótem de Golden Orb en la mano
