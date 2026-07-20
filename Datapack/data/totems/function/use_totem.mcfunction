@@ -6,6 +6,14 @@ execute as @a if score @s used_jann matches 1.. run scoreboard players remove @s
 # Mostrar mensaje cuando se usa el tótem de Jann
 execute as @a[scores={used_totem=1,used_jann=1..}] run tellraw @a [{"text":"¡Jann y ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" han soñado con un día más juntos!",color:"yellow",bold:false}]
 
+# ===== ADIAC GEMA =====
+# Detectar si el jugador tiene el tótem Gema en la mano
+execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="adiac_gem"] run scoreboard players set @s used_gem 3
+# Reducir el contador del tótem cada tick   
+execute as @a if score @s used_gem matches 1.. run scoreboard players remove @s used_gem 1
+# Mostrar mensaje cuando se usa el tótem Gema
+execute as @a[scores={used_totem=1,used_gem=1..}] run tellraw @a [{"text":"¡",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" se salvó de quedarse duro!",color:"yellow",bold:false}]
+
 # ===== ADIAC MANCHAS =====
 # Detectar si el jugador tiene el tótem de Manchas en la mano
 execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="adiac_manchas"] run scoreboard players set @s used_manchas 3

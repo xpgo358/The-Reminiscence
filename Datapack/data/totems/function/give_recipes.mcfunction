@@ -1,4 +1,5 @@
 recipe give @a totems:addy_jann
+recipe give @a totems:adiac_gem
 recipe give @a totems:adiac_manchas
 recipe give @a totems:belbio_kiki
 recipe give @a totems:boom_tnt
