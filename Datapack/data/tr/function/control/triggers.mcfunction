@@ -5,13 +5,27 @@ execute as @a[scores={afk=0..,afk-status=0}] run tag @s add tr_afk_on
 execute as @a[scores={afk=0..,afk-status=1}] run tag @s add tr_afk_off
 execute as @a[tag=tr_afk_on] run scoreboard players set @s afk-status 1
 execute as @a[tag=tr_afk_off] run scoreboard players set @s afk-status 0
+function tr:admin/update_teams
 execute as @a[tag=tr_afk_on] run tellraw @a [{"text":"¡","color":"gray",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" está AFK!","color":"gray",bold:false}]
 execute as @a[tag=tr_afk_off] run tellraw @a [{"text":"¡","color":"gray",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está AFK!","color":"gray",bold:false}]
 # Persistent AFK actionbar for all AFK players (runs every tick via triggers)
+
 execute as @a[tag=tr_afk_on] run waypoint modify @s color hex 808080
 execute as @a[tag=tr_afk_off] run function tr:control/color/apply_saved
 execute as @a[tag=tr_afk_on] run tag @s remove tr_afk_on
 execute as @a[tag=tr_afk_off] run tag @s remove tr_afk_off
+
+# Roleplay (0=No, 1=Yes)
+execute as @a[scores={roleplay=0..,roleplay-status=0}] run tag @s add tr_roleplay_on
+execute as @a[scores={roleplay=0..,roleplay-status=1}] run tag @s add tr_roleplay_off
+execute as @a[tag=tr_roleplay_on] run scoreboard players set @s roleplay-status 1
+execute as @a[tag=tr_roleplay_off] run scoreboard players set @s roleplay-status 0
+execute as @a[tag=tr_roleplay_on] run tellraw @s [{"text":"\nNormas del roleplay:\n","color":"light_purple"},{"text":"- Pendiente: ","color":"yellow"},{"text":"las normas se definirán más adelante.","color":"white"}]
+function tr:admin/update_teams
+execute as @a[tag=tr_roleplay_on] run tellraw @a [{"text":"¡","color":"light_purple",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" está haciendo roleplay!","color":"light_purple",bold:false}]
+execute as @a[tag=tr_roleplay_off] run tellraw @a [{"text":"¡","color":"light_purple",bold:false},{"selector":"@s",color:"gold",bold:true},{"text":" ya no está haciendo roleplay!","color":"light_purple",bold:false}]
+execute as @a[tag=tr_roleplay_on] run tag @s remove tr_roleplay_on
+execute as @a[tag=tr_roleplay_off] run tag @s remove tr_roleplay_off
 
 # Update Prank Level (0-5)
 execute as @a[scores={prank=0..5}] run scoreboard players operation @s prank-level = @s prank
@@ -45,7 +59,7 @@ execute as @a[scores={color-step=7,colorpick=1}] run function tr:control/color/a
 execute as @a[scores={color-step=7,colorpick=0}] run function tr:control/color/start
 
 # Help
-execute as @a[scores={help=1..}] run tellraw @s [{"text":"\n¡Ayuda del servidor!\n","color":"gold"},{"text":"- Prank: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger prank set <nivel>","color":"aqua","italic":true},{"text":" para establecer tu nivel entre 0 y 5.\n","color":"white"},{"text":"- Streaming y Recording: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger streaming","color":"aqua","italic":true},{"text":" y ","color":"white"},{"text":"/trigger recording","color":"aqua","italic":true},{"text":" para activar y desactivar, ya que funcionan como un interruptor.\n","color":"white"},{"text":"- AFK: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger afk","color":"aqua","italic":true},{"text":" para activar y desactivar, ya que funciona como un interruptor.\n","color":"white"},{"text":"- Locatorbar color: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger color","color":"aqua","italic":true},{"text":" para elegir los 6 dígitos hex de tu color.\n","color":"white"},{"text":"- Reglas: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger rules","color":"aqua","italic":true},{"text":" para ver las reglas del servidor.\n","color":"white"},{"text":"- Ayuda: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger help","color":"aqua","italic":true},{"text":" para ver este mensaje nuevamente.\n","color":"white"},{"text":"- Tótem: ","color":"yellow"},{"text":"Para cambiar la apariencia de tu tótem, ","color":"white"},{"text":"craftéalo","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"¡Disfruta del servidor!\n","color":"green","italic":true}]
+execute as @a[scores={help=1..}] run tellraw @s [{"text":"\n¡Ayuda del servidor!\n","color":"gold"},{"text":"- Prank: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger prank set <nivel>","color":"aqua","italic":true},{"text":" para establecer tu nivel entre 0 y 5.\n","color":"white"},{"text":"- Streaming y Recording: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger streaming","color":"aqua","italic":true},{"text":" y ","color":"white"},{"text":"/trigger recording","color":"aqua","italic":true},{"text":" para activar y desactivar, ya que funcionan como un interruptor.\n","color":"white"},{"text":"- Roleplay: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger roleplay","color":"aqua","italic":true},{"text":" para activar y desactivar el modo roleplay.\n","color":"white"},{"text":"- AFK: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger afk","color":"aqua","italic":true},{"text":" para activar y desactivar, ya que funciona como un interruptor.\n","color":"white"},{"text":"- Locatorbar color: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger color","color":"aqua","italic":true},{"text":" para elegir los 6 dígitos hex de tu color.\n","color":"white"},{"text":"- Reglas: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger rules","color":"aqua","italic":true},{"text":" para ver las reglas del servidor.\n","color":"white"},{"text":"- Ayuda: ","color":"yellow"},{"text":"Usa ","color":"white"},{"text":"/trigger help","color":"aqua","italic":true},{"text":" para ver este mensaje nuevamente.\n","color":"white"},{"text":"- Tótem: ","color":"yellow"},{"text":"Para cambiar la apariencia de tu tótem, ","color":"white"},{"text":"craftéalo","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"¡Disfruta del servidor!\n","color":"green","italic":true}]
 execute as @a[scores={rules=1..}] run tellraw @s [{"text":"\nReglas del servidor:\n","color":"gold"},{"text":"- Respeto: ","color":"yellow"},{"text":"Trata a todos los jugadores con respeto. No se toleran ","color":"white"},{"text":"insultos","color":"light_purple","italic":true},{"text":", ","color":"white"},{"text":"acoso","color":"light_purple","italic":true},{"text":" o ","color":"white"},{"text":"comportamientos tóxicos","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"- Trampas: ","color":"yellow"},{"text":"No uses ","color":"white"},{"text":"hacks","color":"light_purple","italic":true},{"text":", ","color":"white"},{"text":"X-ray","color":"light_purple","italic":true},{"text":" o ","color":"white"},{"text":"exploits","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"- Dupping: ","color":"yellow"},{"text":"No está permitido ","color":"white"},{"text":"duplicar items","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"- Comunicación: ","color":"yellow"},{"text":"Usa el chat de forma constructiva. No hagas ","color":"white"},{"text":"spam","color":"light_purple","italic":true},{"text":" ni ","color":"white"},{"text":"flood","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"- Conflicto: ","color":"yellow"},{"text":"Resuelve problemas civilizadamente. Si es necesario, ","color":"white"},{"text":"contacta con un mod","color":"aqua","italic":true},{"text":".\n","color":"white"},{"text":"- No Griefing: ","color":"yellow"},{"text":"No destruyas ","color":"white"},{"text":"construcciones ajenas","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"- No Robar: ","color":"yellow"},{"text":"No robes ","color":"white"},{"text":"items","color":"light_purple","italic":true},{"text":" de contenedores ajenos.\n","color":"white"},{"text":"- PVP: ","color":"yellow"},{"text":"Solo ","color":"white"},{"text":"con consentimiento mutuo","color":"aqua","italic":true},{"text":", excepto en zonas PvP libres.\n","color":"white"},{"text":"- Lag: ","color":"yellow"},{"text":"Evita ","color":"white"},{"text":"granjas masivas","color":"aqua","italic":true},{"text":" que causen lag al servidor.\n","color":"white"},{"text":"- Contenido +18: ","color":"yellow"},{"text":"Prohibido ","color":"white"},{"text":"NSFW","color":"light_purple","italic":true},{"text":".\n","color":"white"},{"text":"¡Gracias por mantener nuestra comunidad sana!\n","color":"green","italic":true}]
 
 # Version
@@ -68,6 +82,10 @@ scoreboard players enable @a streaming
 # Recording
 scoreboard players set @a recording -1
 scoreboard players enable @a recording
+
+# Roleplay
+scoreboard players set @a roleplay -1
+scoreboard players enable @a roleplay
 
 # Help
 scoreboard players reset @a help

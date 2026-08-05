@@ -5,6 +5,7 @@ scoreboard objectives add prank-level dummy
 scoreboard objectives add recording-status dummy
 scoreboard objectives add streaming-status dummy
 scoreboard objectives add afk-status dummy
+scoreboard objectives add roleplay-status dummy
 scoreboard objectives add color-step dummy
 scoreboard objectives add color-d1 dummy
 scoreboard objectives add color-d2 dummy
@@ -31,6 +32,7 @@ scoreboard objectives setdisplay list health
 scoreboard objectives add prank trigger
 scoreboard objectives add streaming trigger
 scoreboard objectives add recording trigger
+scoreboard objectives add roleplay trigger
 scoreboard objectives add help trigger
 scoreboard objectives add rules trigger
 scoreboard objectives add version trigger

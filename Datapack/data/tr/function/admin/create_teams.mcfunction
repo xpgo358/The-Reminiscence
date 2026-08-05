@@ -1,5 +1,10 @@
 #tellraw @a {"text":"[tr] Creando teams...","color":"yellow"}
 ## Create teams for all prank/recording/streaming status combinations
+# Roleplay
+team add ROLEPLAY
+team modify ROLEPLAY color light_purple
+team modify ROLEPLAY suffix {text:" ✴",color:"light_purple",bold:true,hover_event:{action:show_text,value:{text:"",extra:[{text:"ROL:",bold:true,color:"light_purple"},{text:" Estoy haciendo roleplay.",color:"white"}]}}}
+
 # AFK
 team add AFK_OVERWORLD
 team modify AFK_OVERWORLD color gray

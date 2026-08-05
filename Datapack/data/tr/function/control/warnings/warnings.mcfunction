@@ -1,3 +1,4 @@
+execute as @a[scores={roleplay-status=1}] run function tr:control/warnings/roleplay/display_actionbar
 execute as @a[scores={afk-status=1}] run function tr:control/warnings/afk/display_actionbar
 
 ## POR SI ALGUN DIA QUIEREN LA FUNCIÓN :(

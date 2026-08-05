@@ -1,0 +1,2 @@
+## Simple ROLEPLAY message on join
+tellraw @s [{"text":"¡","color":"light_purple",bold:false},{"selector":"@s","color":"gold",bold:true},{"text":" está haciendo roleplay!","color":"light_purple",bold:false}]

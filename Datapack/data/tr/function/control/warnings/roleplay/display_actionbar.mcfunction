@@ -1,0 +1,1 @@
+title @s actionbar [{"text":"✴ ROL ✴","color":"light_purple","bold":true}]

@@ -5,6 +5,7 @@ scoreboard players set @s prank-level 0
 scoreboard players set @s recording-status 0
 scoreboard players set @s streaming-status 0
 scoreboard players set @s afk-status 0
+scoreboard players set @s roleplay-status 0
 
 # Scoreboards - color digits (hex F = 15)
 scoreboard players set @s color-d1 15
