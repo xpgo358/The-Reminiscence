@@ -17,14 +17,11 @@ recipe give @a totems:karen_thor
 recipe give @a totems:karina_otter
 recipe give @a totems:kler_aysha
 recipe give @a totems:kris_knight
-recipe give @a totems:laura_burbuja
 recipe give @a totems:lu_lala
 recipe give @a totems:mati_yuki
-recipe give @a totems:melklyth_escarchita
 recipe give @a totems:nebluno_neri
 recipe give @a totems:pamme_rich
 recipe give @a totems:phavern_ralsei
-recipe give @a totems:phos_danny
 recipe give @a totems:romo_berry_bunny
 recipe give @a totems:rury_golden_orb
 recipe give @a totems:sama_mika

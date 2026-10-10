@@ -152,14 +152,6 @@ execute as @a if score @s used_knight matches 1.. run scoreboard players remove 
 # Mostrar mensaje cuando se usa el tótem de Knight
 execute as @a[scores={used_totem=1,used_knight=1..}] run tellraw @a [{"selector":"@s",color:"gold",bold:true},{"text":" estuvo a punto de ser consumido por el vacío pero el caballerito llegó a salvarlo","color":"yellow",bold:false}]
 
-# ===== LAURA BURBUJA =====
-# Detectar si el jugador tiene el tótem de Burbuja en la mano
-execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="laura_burbuja"] run scoreboard players set @s used_burbuja 3
-# Reducir el contador del tótem cada tick
-execute as @a if score @s used_burbuja matches 1.. run scoreboard players remove @s used_burbuja 1
-# Mostrar mensaje cuando se usa el tótem de Burbuja
-execute as @a[scores={used_totem=1,used_burbuja=1..}] run tellraw @a [{"text":"El alma de Burbuja viene a rescatar a ","color":"yellow",bold:false},{"selector":"@s","color":"gold","bold":true},{"text":" de la muerte. ¡No pierdas esta oportunidad!","color":"yellow",bold:false}]
-
 # ===== LU LALA =====
 # Detectar si el jugador tiene el tótem de Lala en la mano
 execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="lu_lala"] run scoreboard players set @s used_lala 3
@@ -175,14 +167,6 @@ execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model=
 execute as @a if score @s used_yuki matches 1.. run scoreboard players remove @s used_yuki 1
 # Mostrar mensaje cuando se usa el tótem de Yuki
 execute as @a[scores={used_totem=1,used_yuki=1..}] run tellraw @a [{"text":"¡Yuki ha ronroneado, provocando tanta ternura a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" que le ha curado!",color:"yellow",bold:false}]
-
-# ===== MELKLYTH ESCARCHITA =====
-# Detectar si el jugador tiene el tótem de Escarchita en la mano
-execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="melklyth_escarchita"] run scoreboard players set @s used_escarchita 3
-# Reducir el contador del tótem cada tick
-execute as @a if score @s used_escarchita matches 1.. run scoreboard players remove @s used_escarchita 1
-# Mostrar mensaje cuando se usa el tótem de Escarchita
-execute as @a[scores={used_totem=1,used_escarchita=1..}] run tellraw @a [{"text":"¡Escarchita ha helado a la muerte con su pelaje convirtiendo en un polo a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" en el proceso!",color:"yellow",bold:false}]
 
 # ===== NEBLUNO NERI =====
 # Detectar si el jugador tiene el tótem de Neri en la mano
@@ -207,14 +191,6 @@ execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model=
 execute as @a if score @s used_ralsei matches 1.. run scoreboard players remove @s used_ralsei 1
 # Mostrar mensaje cuando se usa el tótem de Ralsei
 execute as @a[scores={used_totem=1,used_ralsei=1..}] run tellraw @a [{"text":"¡Ralsei le ha hecho un pastel a ",color:"yellow"},{"selector":"@s",color:"gold",bold:true},{text:" y le ha dado una segunda vida!",color:"yellow"}]
-
-# ===== PHOS DANNY =====
-# Detectar si el jugador tiene el tótem de Danny en la mano
-execute as @a if items entity @s weapon.* minecraft:totem_of_undying[item_model="phos_danny"] run scoreboard players set @s used_danny 3
-# Reducir el contador del tótem cada tick
-execute as @a if score @s used_danny matches 1.. run scoreboard players remove @s used_danny 1
-# Mostrar mensaje cuando se usa el tótem de Danny
-execute as @a[scores={used_totem=1,used_danny=1..}] run tellraw @a [{"text":"¡No es Garfield, es Danny, que ha salvado a ",color:"yellow",bold:false},{"selector":"@s",color:"gold",bold:true},{text:" comiéndose la muerte de un bocado!",color:"yellow",bold:false}]
 
 # ===== ROMO BERRY BUNNY =====
 # Detectar si el jugador tiene el tótem Berry Bunny en la mano
