@@ -12,3 +12,4 @@ execute as @a if score @s leave matches 1 run function tr:control/join_message
 
 # Warnings
 function tr:control/warnings/warnings
+function tr:control/warnings/build_limit/10kblocks
