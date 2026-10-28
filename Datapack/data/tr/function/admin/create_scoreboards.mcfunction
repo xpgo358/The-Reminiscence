@@ -13,6 +13,7 @@ scoreboard objectives add color-d3 dummy
 scoreboard objectives add color-d4 dummy
 scoreboard objectives add color-d5 dummy
 scoreboard objectives add color-d6 dummy
+scoreboard objectives add 10kwarning dummy
 
 # Join message prep
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
